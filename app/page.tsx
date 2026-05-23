@@ -455,7 +455,7 @@ const content = {
     stats: [
       { number: '2', label: 'Engineering degrees' },
       { number: '3', label: 'Countries researched in' },
-      { number: '2 + 3', label: 'Languages spoken' },
+      { number: '2 + 1', label: 'Languages spoken' },
     ],
     eduEyebrow: 'Academic background',
     eduTitle: 'Education',
@@ -565,7 +565,7 @@ const content = {
     stats: [
       { number: '2', label: 'ปริญญาวิศวกรรม' },
       { number: '3', label: 'ประเทศที่มีประสบการณ์วิจัย' },
-      { number: '2 + 3', label: 'ภาษาที่ใช้งานได้' },
+      { number: '2 + 1', label: 'ภาษาที่ใช้งานได้' },
     ],
     eduEyebrow: 'พื้นฐานทางวิชาการ',
     eduTitle: 'การศึกษา',
