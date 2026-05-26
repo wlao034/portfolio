@@ -516,7 +516,7 @@ const content = {
     skillsTitle: 'Skills',
     skills: [
       { label: 'Data & Computing', tags: ['Python', 'Machine Learning', 'Data Analysis', 'Statistical Analysis', 'Tableau', 'Power BI', 'Origin Lab', 'Excel', 'Word', 'PowerPoint'] },
-      { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] }
+      { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] },
       { label: 'Biomedical & Lab', tags: ['Nanoindentation', 'Microindentation', 'Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Medical Imaging', 'OCT', 'Functional Materials', 'Semiconductor', 'Nanotechnology', 'Nanomaterials', 'Biomedical Devices', 'Lab Skills'] },
       { label: 'Computational', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
       { label: 'Quality & Regulatory', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC'] },
