@@ -516,7 +516,7 @@ const content = {
     skillsTitle: 'Skills',
     skills: [
       { label: 'Data & Computing', tags: ['Python', 'Machine Learning', 'Data Analysis', 'Statistical Analysis', 'Tableau', 'Power BI', 'Origin Lab', 'Excel', 'Word', 'PowerPoint'] },
-      { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] },
+      { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] }
       { label: 'Biomedical & Lab', tags: ['Nanoindentation', 'Microindentation', 'Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Medical Imaging', 'OCT', 'Functional Materials', 'Semiconductor', 'Nanotechnology', 'Nanomaterials', 'Biomedical Devices', 'Lab Skills'] },
       { label: 'Computational', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
       { label: 'Quality & Regulatory', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC'] },
@@ -626,7 +626,7 @@ const content = {
     skillsTitle: 'ทักษะ',
     skills: [
       { label: 'ข้อมูลและคอมพิวเตอร์', tags: ['Python', 'Machine Learning', 'วิเคราะห์ข้อมูล', 'สถิติ', 'Tableau', 'Power BI', 'Origin Lab', 'Excel', 'Word', 'PowerPoint'] },
-      { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'เทอร์โมไดนามิกส์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'วิศวกรรมสิ่งแวดล้อม', 'บำบัดน้ำเสีย', 'วิทยาศาสตร์อาหาร', 'การจัดการของเสีย', 'Product Stewardship'] },
+      { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'เทอร์โมไดนามิกส์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'HYSYS', 'วิศวกรรมสิ่งแวดล้อม', 'บำบัดน้ำเสีย', 'วิทยาศาสตร์อาหาร', 'การจัดการของเสีย', 'Product Stewardship'] },
       { label: 'ชีวการแพทย์และห้องปฏิบัติการ', tags: ['Nanoindentation', 'Microindentation', 'Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Medical Imaging', 'OCT', 'วัสดุฟังก์ชัน', 'Semiconductor', 'Nanotechnology', 'Nanomaterials', 'อุปกรณ์การแพทย์', 'ทักษะห้องปฏิบัติการ'] },
       { label: 'การคำนวณ', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
       { label: 'คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC'] },
