@@ -778,7 +778,8 @@ export default function Home() {
       window.removeEventListener('mousemove', moveCursor)
       window.removeEventListener('keydown', onKey)
       window.removeEventListener('click', closeDropdown)
-  }, [])
+    }
+}, [])
 
   // Re-observe after lang switch
   useEffect(() => {
