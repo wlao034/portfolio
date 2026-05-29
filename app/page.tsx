@@ -487,7 +487,6 @@ const content = {
         period: '2025 – Present', org: 'University of Auckland',
         title: "Master's Thesis", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
         linkLabel: 'Referee / Supervisor ↗',   
-    
         bullets: [
           'Performed microindentation mechanical testing on biological tissue samples across articular cartilage and growth plate sub-structures',
           'Applied critical analysis to reconcile conflicting experimental data and form evidence-based conclusions',
@@ -598,6 +597,7 @@ const content = {
       {
         period: '2568 – ปัจจุบัน', org: 'มหาวิทยาลัยออคแลนด์',
         title: 'วิทยานิพนธ์ระดับปริญญาโท', link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
+        linkLabel: 'อาจารย์ที่ปรึกษา / ผู้รับรอง ↗',
         bullets: [
           'ทดสอบสมบัติทางกลด้วย microindentation บนตัวอย่างเนื้อเยื่อชีวภาพใน articular cartilage และ growth plate sub-structures',
           'วิเคราะห์และประเมินข้อมูลเชิงปริมาณ เพื่อสรุปผลจากหลักฐานเชิงประจักษ์',
@@ -863,9 +863,9 @@ export default function Home() {
                 {e.link && (
                   <a href={e.link} target="_blank" rel="noreferrer" className="exp-link">
                     <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 10L10 2M10 2H5M10 2V7" /></svg>
-                    {t.visitBtn}
+                    {(e as any).linkLabel ?? t.visitBtn}
                   </a>
-                )}
+              )}
               </div>
             </div>
           ))}
