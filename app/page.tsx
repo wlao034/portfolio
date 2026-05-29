@@ -595,7 +595,7 @@ const content = {
     exp: [
       {
         period: '2568 – ปัจจุบัน', org: 'มหาวิทยาลัยออคแลนด์',
-        title: 'วิทยานิพนธ์ระดับปริญญาโท', link: null,
+        title: 'วิทยานิพนธ์ระดับปริญญาโท', link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
         bullets: [
           'ทดสอบสมบัติทางกลด้วย microindentation บนตัวอย่างเนื้อเยื่อชีวภาพใน articular cartilage และ growth plate sub-structures',
           'วิเคราะห์และประเมินข้อมูลเชิงปริมาณ เพื่อสรุปผลจากหลักฐานเชิงประจักษ์',
