@@ -542,6 +542,12 @@ const content = {
     contactTitle: <>Let&apos;s <em>work</em> together</>,
     contactSub: 'Open to opportunities in Thailand, Singapore, and beyond · Available from August 2026',
     emailBtn: 'Email me →',
+      downloadCV: 'Download CV ↓',
+    cvVersions: [
+      { label: 'High-Tech & Industrial', file: '/CV_HighTech_Industrial.pdf' },
+      { label: 'Materials & Chemicals', file: '/CV_Materials_Chemicals.pdf' },
+      { label: 'Medical Device', file: '/CV_Medical_device.pdf' },
+    ],
     footerNote: 'Auckland, New Zealand · 2026',
   },
   th: {
@@ -653,7 +659,7 @@ const content = {
     contactTitle: <>พร้อม<em>ร่วมงาน</em>กับคุณ</>,
     contactSub: 'เปิดรับโอกาสในไทย สิงคโปร์ และทั่วโลก · พร้อมทำงานตั้งแต่สิงหาคม 2569',
     emailBtn: 'ส่งอีเมล →',
-    downloadCV: 'Download CV ↓',
+    downloadCV: 'ดาวน์โหลด CV ↓',
     cvVersions: [
       { label: 'High-Tech & Industrial', file: '/CV_HighTech_Industrial.pdf' },
       { label: 'Materials & Chemicals', file: '/CV_Materials_Chemicals.pdf' },
