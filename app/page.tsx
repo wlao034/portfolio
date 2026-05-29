@@ -429,7 +429,6 @@ footer {
 
   .hero-title { font-size: clamp(28px, 9vw, 44px); }
 }
-`
 .cv-dropdown { position: relative; display: inline-block; }
 .cv-dropdown-menu {
   position: absolute; bottom: calc(100% + 8px); left: 0;
@@ -778,7 +777,6 @@ export default function Home() {
       window.removeEventListener('mousemove', moveCursor)
       window.removeEventListener('keydown', onKey)
       window.removeEventListener('click', closeDropdown)
-    }
     }
   }, [])
 
