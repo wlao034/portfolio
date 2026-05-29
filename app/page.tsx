@@ -485,7 +485,9 @@ const content = {
     exp: [
       {
         period: '2025 – Present', org: 'University of Auckland',
-        title: "Master's Thesis Researcher", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
+        title: "Master's Thesis", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
+        linkLabel: 'Referee / Supervisor ↗',   
+    
         bullets: [
           'Performed microindentation mechanical testing on biological tissue samples across articular cartilage and growth plate sub-structures',
           'Applied critical analysis to reconcile conflicting experimental data and form evidence-based conclusions',
