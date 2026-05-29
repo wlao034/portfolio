@@ -445,7 +445,7 @@ const content = {
     heroLine1: 'Engineering at the',
     heroLine2: <>intersection of <em>science</em></>,
     heroLine3: 'and ',
-    typedPhrases: ['science & data.', 'health & impact.', 'nations & culture.'],
+    typedPhrases: ['data & information.', 'health & impact.'],
     heroName: 'Waraitip Laosangprateep',
     heroBio1: "Master's in Medical Engineering at University of Auckland, with a foundation in Chemical Engineering from Thammasat University (SIIT). Research experience across New Zealand, Taiwan, and Thailand.",
     heroBio2: 'Bilingual communicator — native in Thai and proficient in English, with basic knowledge of Japanese. Passionate about cross-cultural collaboration.',
@@ -465,7 +465,7 @@ const content = {
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
         details: [
-          'Thesis: Mechanical characterisation of growth plate structures using microindentation techniques',
+          'Thesis: Microstructural & Mechanical characterisation of new born lamb cartilage & growthplate',
           'Coursework: Advanced Functional Materials · Semiconductor & Materials Science · Medical Device & Technology Development · Advanced Imaging (OCT, MRI, Ultrasound) · Machine Learning for Biomedical Applications · Engineering Project Management · Drug Disposition & Kinetics · Waste Management · Product Stewardship',
         ],
       },
@@ -485,9 +485,9 @@ const content = {
     exp: [
       {
         period: '2025 – Present', org: 'University of Auckland',
-        title: "Master's Thesis Researcher", link: null,
+        title: "Master's Thesis Researcher", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
         bullets: [
-          'Performed nanoindentation and microindentation mechanical testing on biological tissue samples across growth plate sub-structures',
+          'Performed microindentation mechanical testing on biological tissue samples across articular cartilage and growth plate sub-structures',
           'Applied critical analysis to reconcile conflicting experimental data and form evidence-based conclusions',
           'Developed expertise in precision instrumentation, sample preparation, and quantitative data interpretation',
         ],
@@ -555,7 +555,7 @@ const content = {
     heroLine1: 'วิศวกรรมศาสตร์ที่',
     heroLine2: <>จุดบรรจบของ<em>วิทยาศาสตร์</em></>,
     heroLine3: 'และ ',
-    typedPhrases: ['วิทยาศาสตร์และข้อมูล', 'สุขภาพและนวัตกรรม', 'ชาติและวัฒนธรรม'],
+    typedPhrases: ['ข้อมูลและสารสนเทศ', 'สุขภาพและนวัตกรรม'],
     heroName: 'วลัยทิพย์ เหล่าแสงประทีป',
     heroBio1: 'กำลังศึกษาระดับปริญญาโท สาขาวิศวกรรมการแพทย์ มหาวิทยาลัยออคแลนด์ ประเทศนิวซีแลนด์ จบการศึกษาปริญญาตรีสาขาวิศวกรรมเคมี จากมหาวิทยาลัยธรรมศาสตร์ (SIIT)',
     heroBio2: 'พูดไทยและอังกฤษได้คล่อง มีความรู้ภาษาญี่ปุ่นเบื้องต้น ชื่นชอบการสื่อสารและทำงานข้ามวัฒนธรรม',
@@ -575,7 +575,7 @@ const content = {
         school: 'มหาวิทยาลัยออคแลนด์ (University of Auckland) · นิวซีแลนด์',
         period: '2568 – 2569',
         details: [
-          'วิทยานิพนธ์: การวิเคราะห์คุณสมบัติทางกลของโครงสร้าง growth plate ด้วยเทคนิค microindentation',
+          'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
           'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning สำหรับชีวการแพทย์ · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
         ],
       },
@@ -595,9 +595,9 @@ const content = {
     exp: [
       {
         period: '2568 – ปัจจุบัน', org: 'มหาวิทยาลัยออคแลนด์',
-        title: 'นักวิจัยวิทยานิพนธ์ระดับปริญญาโท', link: null,
+        title: 'วิทยานิพนธ์ระดับปริญญาโท', link: null,
         bullets: [
-          'ทดสอบสมบัติทางกลด้วย nanoindentation และ microindentation บนตัวอย่างเนื้อเยื่อชีวภาพใน growth plate sub-structures',
+          'ทดสอบสมบัติทางกลด้วย microindentation บนตัวอย่างเนื้อเยื่อชีวภาพใน articular cartilage และ growth plate sub-structures',
           'วิเคราะห์และประเมินข้อมูลเชิงปริมาณ เพื่อสรุปผลจากหลักฐานเชิงประจักษ์',
           'พัฒนาความเชี่ยวชาญด้านเครื่องมือวัดละเอียด การเตรียมตัวอย่าง และการตีความข้อมูล',
         ],
