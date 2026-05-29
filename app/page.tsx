@@ -653,6 +653,12 @@ const content = {
     contactTitle: <>พร้อม<em>ร่วมงาน</em>กับคุณ</>,
     contactSub: 'เปิดรับโอกาสในไทย สิงคโปร์ และทั่วโลก · พร้อมทำงานตั้งแต่สิงหาคม 2569',
     emailBtn: 'ส่งอีเมล →',
+    downloadCV: 'Download CV ↓',
+    cvVersions: [
+      { label: 'High-Tech & Industrial', file: '/CV_HighTech_Industrial.pdf' },
+      { label: 'Materials & Chemicals', file: '/CV_Materials_Chemicals.pdf' },
+      { label: 'Medical Device', file: '/CV_Medical_device.pdf' },
+    ],
     footerNote: 'ออคแลนด์ นิวซีแลนด์ · 2569',
   },
 } as const
@@ -660,6 +666,7 @@ const content = {
 type Lang = 'en' | 'th'
 
 export default function Home() {
+  const [cvOpen, setCvOpen] = useState(false)
   const [lang, setLang] = useState<Lang>('en')
   const [switching, setSwitching] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
