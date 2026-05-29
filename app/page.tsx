@@ -430,7 +430,25 @@ footer {
   .hero-title { font-size: clamp(28px, 9vw, 44px); }
 }
 `
-
+.cv-dropdown { position: relative; display: inline-block; }
+.cv-dropdown-menu {
+  position: absolute; bottom: calc(100% + 8px); left: 0;
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+  min-width: 220px; z-index: 50;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  opacity: 0; pointer-events: none; transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.cv-dropdown.open .cv-dropdown-menu { opacity: 1; pointer-events: all; transform: none; }
+.cv-dropdown-item {
+  display: block; padding: 12px 18px;
+  font-size: 13px; color: var(--text); text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s, color 0.15s;
+}
+.cv-dropdown-item:last-child { border-bottom: none; }
+.cv-dropdown-item:hover { background: var(--bg); color: var(--accent); }
 // ── ALL CONTENT ──────────────────────────────────────────────
 const content = {
   en: {
@@ -750,10 +768,17 @@ export default function Home() {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setLightboxSrc(null) }
     window.addEventListener('keydown', onKey)
 
+    const closeDropdown = (e: MouseEvent) => {
+      if (!(e.target as Element).closest('.cv-dropdown')) setCvOpen(false)
+    }
+    window.addEventListener('click', closeDropdown)
+
     return () => {
       window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('mousemove', moveCursor)
       window.removeEventListener('keydown', onKey)
+      window.removeEventListener('click', closeDropdown)
+    }
     }
   }, [])
 
@@ -938,8 +963,20 @@ export default function Home() {
           <div className="contact-links">
             <a href="mailto:Waraitip.l26@gmail.com" className="btn-primary">{t.emailBtn}</a>
             <a href="https://www.linkedin.com/in/waraitip-laosangprateep-b33933388" target="_blank" rel="noreferrer" className="btn-outline">LinkedIn ↗</a>
-          </div>
-        </section>
+            <div className={`cv-dropdown${cvOpen ? ' open' : ''}`}>
+              <button className="btn-outline" onClick={() => setCvOpen(v => !v)}>
+                {t.downloadCV}
+              </button>
+              <div className="cv-dropdown-menu">
+                {t.cvVersions.map(cv => (
+                  <a key={cv.file} href={cv.file} download className="cv-dropdown-item">
+                    ↓ {cv.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
 
         <footer>
           <span className="footer-name">{t.heroName}</span>
