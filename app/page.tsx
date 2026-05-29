@@ -448,6 +448,7 @@ footer {
 }
 .cv-dropdown-item:last-child { border-bottom: none; }
 .cv-dropdown-item:hover { background: var(--bg); color: var(--accent); }
+`
 // ── ALL CONTENT ──────────────────────────────────────────────
 const content = {
   en: {
@@ -777,7 +778,6 @@ export default function Home() {
       window.removeEventListener('mousemove', moveCursor)
       window.removeEventListener('keydown', onKey)
       window.removeEventListener('click', closeDropdown)
-    }
   }, [])
 
   // Re-observe after lang switch
