@@ -467,7 +467,7 @@ const content = {
     heroName: 'Waraitip Laosangprateep',
     heroBio1: "Master's in Medical Engineering at University of Auckland, with a foundation in Chemical Engineering from Thammasat University (SIIT). Research experience across New Zealand, Taiwan, and Thailand.",
     heroBio2: 'Bilingual communicator — native in Thai and proficient in English, with basic knowledge of Japanese. Passionate about cross-cultural collaboration.',
-    heroAvail: 'Available from 16 August 2026 · Open to Thailand, Singapore & beyond',
+    heroAvail: 'Available from August 2026 · Open to Thailand, Singapore & beyond',
     heroBtn1: 'View my work →',
     heroBtn2: 'Get in touch',
     stats: [
