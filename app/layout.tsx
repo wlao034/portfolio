@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "title: "Waraitip Laosangprateep — Engineering Portfolio",
+  title: "Waraitip Laosangprateep — Engineering Portfolio",
   description: "Master of Medical Engineering | Open to roles in Singapore, Thailand & beyond.",
 };
 
