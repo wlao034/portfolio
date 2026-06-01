@@ -426,28 +426,8 @@ footer {
   .back-top { bottom: 20px; right: 20px; }
 }
 @media (max-width: 400px) {
-
   .hero-title { font-size: clamp(28px, 9vw, 44px); }
 }
-.cv-dropdown { position: relative; display: inline-block; }
-.cv-dropdown-menu {
-  position: absolute; bottom: calc(100% + 8px); left: 0;
-  background: var(--white); border: 1px solid var(--border);
-  border-radius: 12px; overflow: hidden;
-  min-width: 220px; z-index: 50;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  opacity: 0; pointer-events: none; transform: translateY(8px);
-  transition: opacity 0.2s, transform 0.2s;
-}
-.cv-dropdown.open .cv-dropdown-menu { opacity: 1; pointer-events: all; transform: none; }
-.cv-dropdown-item {
-  display: block; padding: 12px 18px;
-  font-size: 13px; color: var(--text); text-decoration: none;
-  border-bottom: 1px solid var(--border);
-  transition: background 0.15s, color 0.15s;
-}
-.cv-dropdown-item:last-child { border-bottom: none; }
-.cv-dropdown-item:hover { background: var(--bg); color: var(--accent); }
 `
 // ── ALL CONTENT ──────────────────────────────────────────────
 const content = {
@@ -504,7 +484,7 @@ const content = {
       {
         period: '2025 – Present', org: 'University of Auckland',
         title: "Master's Thesis", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
-        linkLabel: 'Referee / Supervisor ↗',   
+        linkLabel: 'Referee / Supervisor ↗',
         bullets: [
           'Performed microindentation mechanical testing on biological tissue samples across articular cartilage and growth plate sub-structures',
           'Applied critical analysis to reconcile conflicting experimental data and form evidence-based conclusions',
@@ -560,12 +540,8 @@ const content = {
     contactTitle: <>Let&apos;s <em>work</em> together</>,
     contactSub: 'Open to opportunities in Thailand, Singapore, and beyond · Available from August 2026',
     emailBtn: 'Email me →',
-      downloadCV: 'Download CV ↓',
-    cvVersions: [
-      { label: 'High-Tech & Industrial', file: '/CV_HighTech_Industrial.pdf' },
-      { label: 'Materials & Chemicals', file: '/CV_Materials_Chemicals.pdf' },
-      { label: 'Medical Device', file: '/CV_Medical_device.pdf' },
-    ],
+    downloadCV: 'Download CV ↓',
+    cvFile: '/CV_Waraitip_full.pdf',
     footerNote: 'Auckland, New Zealand · 2026',
   },
   th: {
@@ -611,7 +587,7 @@ const content = {
         details: [
           'เกรดเฉลี่ย 3.22 / 4.00 · หลักสูตรนานาชาติ สอนเป็นภาษาอังกฤษทั้งหมด',
           'โปรเจกต์จบ: การศึกษาเชิงทฤษฎีของ inclusion complex ระหว่าง butylone กับ β-cyclodextrin — นำเสนอที่ PACCON 2024',
-         'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร ·วามปลอดภัยในการปฏิบัติการทางเคมี · การวิเคราะห์และเครื่องมือวัด (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
+         'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร ·ความปลอดภัยในการปฏิบัติการทางเคมี · การวิเคราะห์และเครื่องมือวัด (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
       },
     ],
@@ -643,7 +619,7 @@ const content = {
         title: 'บริการลูกค้าและปฏิบัติการ', link: null,
         bullets: [
           "ทำงานในร้านค้าปลีกและอาหารในออคแลนด์ — Lily's Collection, Blue Elephant, Mi&Chi, Khao San Eatery และ The Coffee Club",
-          'กษาผลการปฏิบัติงานที่สม่ำเสมอในหลายบทบาทด้านการบริการลูกค้า ควบคู่กับการศึกษาระดับปริญญาโทเต็มเวลา — แสดงให้เห็นถึงความตรงต่อเวลา ความน่าเชื่อถือ การทำงานหลายอย่างพร้อมกัน การบริหารเวลา และการแก้ปัญหาเฉพาะหน้าภายใต้แรงกดดัน',
+          'รักษาผลการปฏิบัติงานที่สม่ำเสมอในหลายบทบาทด้านการบริการลูกค้า ควบคู่กับการศึกษาระดับปริญญาโทเต็มเวลา — แสดงให้เห็นถึงความตรงต่อเวลา ความน่าเชื่อถือ การทำงานหลายอย่างพร้อมกัน การบริหารเวลา และการแก้ปัญหาเฉพาะหน้าภายใต้แรงกดดัน',
           'ใช้งานระบบ POS จัดการเงินสด และประสานงานระหว่างแผนก',
         ],
       },
@@ -678,11 +654,7 @@ const content = {
     contactSub: 'เปิดรับโอกาสในไทย สิงคโปร์ และทั่วโลก · พร้อมทำงานตั้งแต่สิงหาคม 2569',
     emailBtn: 'ส่งอีเมล →',
     downloadCV: 'ดาวน์โหลด CV ↓',
-    cvVersions: [
-      { label: 'High-Tech & Industrial', file: '/CV_HighTech_Industrial.pdf' },
-      { label: 'Materials & Chemicals', file: '/CV_Materials_Chemicals.pdf' },
-      { label: 'Medical Device', file: '/CV_Medical_device.pdf' },
-    ],
+    cvFile: '/CV_Waraitip_full.pdf',
     footerNote: 'ออคแลนด์ นิวซีแลนด์ · 2569',
   },
 } as const
@@ -690,7 +662,6 @@ const content = {
 type Lang = 'en' | 'th'
 
 export default function Home() {
-  const [cvOpen, setCvOpen] = useState(false)
   const [lang, setLang] = useState<Lang>('en')
   const [switching, setSwitching] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -708,7 +679,6 @@ export default function Home() {
 
   const t = content[lang]
 
-  // Restart typing when lang changes
   useEffect(() => {
     if (typingRef.current) clearTimeout(typingRef.current)
     const el = document.getElementById('typed-text')
@@ -768,20 +738,13 @@ export default function Home() {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setLightboxSrc(null) }
     window.addEventListener('keydown', onKey)
 
-    const closeDropdown = (e: MouseEvent) => {
-      if (!(e.target as Element).closest('.cv-dropdown')) setCvOpen(false)
-    }
-    window.addEventListener('click', closeDropdown)
-
     return () => {
       window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('mousemove', moveCursor)
       window.removeEventListener('keydown', onKey)
-      window.removeEventListener('click', closeDropdown)
     }
-}, [])
+  }, [])
 
-  // Re-observe after lang switch
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target) } })
@@ -902,7 +865,7 @@ export default function Home() {
                     <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 10L10 2M10 2H5M10 2V7" /></svg>
                     {(e as any).linkLabel ?? t.visitBtn}
                   </a>
-              )}
+                )}
               </div>
             </div>
           ))}
@@ -962,20 +925,9 @@ export default function Home() {
           <div className="contact-links">
             <a href="mailto:Waraitip.l26@gmail.com" className="btn-primary">{t.emailBtn}</a>
             <a href="https://www.linkedin.com/in/waraitip-laosangprateep-b33933388" target="_blank" rel="noreferrer" className="btn-outline">LinkedIn ↗</a>
-            <div className={`cv-dropdown${cvOpen ? ' open' : ''}`}>
-              <button className="btn-outline" onClick={() => setCvOpen(v => !v)}>
-                {t.downloadCV}
-              </button>
-              <div className="cv-dropdown-menu">
-                {t.cvVersions.map(cv => (
-                  <a key={cv.file} href={cv.file} download className="cv-dropdown-item">
-                    ↓ {cv.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
+            <a href={t.cvFile} download className="btn-outline">{t.downloadCV}</a>
+          </div>
+        </section>
 
         <footer>
           <span className="footer-name">{t.heroName}</span>
