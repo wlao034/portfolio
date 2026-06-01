@@ -526,7 +526,7 @@ const content = {
         title: 'Customer Service & Operations', link: null,
         bullets: [
           "Retail and food service across Lily's Collection, Blue Elephant, Mi&Chi, Khao San Eatery, and The Coffee Club",
-          'Maintained consistent professional performance across multiple customer-facing and operational roles while simultaneously completing a demanding research-based postgraduate degreeม demonstrating punctuality, reliability, multitasking ability, and effective time management through disciplined scheduling and clear task prioritisation that enabled successful delivery on both academic and professional commitments. Adapted quickly to dynamic, fast-paced service environments, applying practical problem-solving and common-sense judgement to resolve on-the-spot operational challenges with minimal supervision.',
+          'Maintained consistent performance across multiple customer-facing roles while completing a full-time postgraduate degree — demonstrating punctuality, reliability, multitasking, effective time management, and practical problem-solving under pressure.',
           'Operated POS systems, cash handling, and inter-departmental cooperation',
         ],
       },
@@ -643,7 +643,7 @@ const content = {
         title: 'บริการลูกค้าและปฏิบัติการ', link: null,
         bullets: [
           "ทำงานในร้านค้าปลีกและอาหารในออคแลนด์ — Lily's Collection, Blue Elephant, Mi&Chi, Khao San Eatery และ The Coffee Club",
-          'รักษาผลการปฏิบัติงานที่สม่ำเสมอในหลายบทบาทด้านการบริการลูกค้าและการดำเนินงาน ควบคู่กับการศึกษาระดับปริญญาโทแบบเต็มเวลาที่มีความเข้มข้นสูง — แสดงให้เห็นถึงความตรงต่อเวลา ความน่าเชื่อถือ ความสามารถในการทำงานหลายอย่างพร้อมกัน และการบริหารเวลาที่มีประสิทธิภาพผ่านการวางแผนที่เป็นระบบและการจัดลำดับความสำคัญของงานอย่างชัดเจน จนสามารถบรรลุเป้าหมายได้ทั้งในด้านวิชาการและการทำงาน ปรับตัวได้รวดเร็วในสภาพแวดล้อมการทำงานที่เปลี่ยนแปลงและเร่งรีบ พร้อมทั้งประยุกต์ใช้การแก้ปัญหาเฉพาะหน้าและความรู้สึกเชิงปฏิบัติ (Common Sense) ในการจัดการสถานการณ์ที่ไม่คาดคิดได้อย่างอิสระ',
+          'กษาผลการปฏิบัติงานที่สม่ำเสมอในหลายบทบาทด้านการบริการลูกค้า ควบคู่กับการศึกษาระดับปริญญาโทเต็มเวลา — แสดงให้เห็นถึงความตรงต่อเวลา ความน่าเชื่อถือ การทำงานหลายอย่างพร้อมกัน การบริหารเวลา และการแก้ปัญหาเฉพาะหน้าภายใต้แรงกดดัน',
           'ใช้งานระบบ POS จัดการเงินสด และประสานงานระหว่างแผนก',
         ],
       },
