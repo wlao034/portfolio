@@ -494,7 +494,7 @@ const content = {
         details: [
           'GPA: 3.22 / 4.00 · International Programme, full English instruction',
           'Senior Project: Theoretical study on butylone inclusion complexes with β-cyclodextrin — presented at PACCON 2024',
-         'Coursework: Chemical Reaction Engineering · Process Design · Plant Design · Thermodynamics · Heat & Mass Transfer · Fluid Mechanics · Environmental Engineering · Wastewater Treatment · Food Science · Aspen Plus · Computational Chemistry · Molecular Docking',
+         'Coursework: Chemical Reaction Engineering · Process Design · Plant Design · Thermodynamics · Heat & Mass Transfer · Fluid Mechanics · Environmental Engineering · Wastewater Treatment · Food Science · Safety in Chemical Operations · Analytical and Instrumental (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
       },
     ],
@@ -611,7 +611,7 @@ const content = {
         details: [
           'เกรดเฉลี่ย 3.22 / 4.00 · หลักสูตรนานาชาติ สอนเป็นภาษาอังกฤษทั้งหมด',
           'โปรเจกต์จบ: การศึกษาเชิงทฤษฎีของ inclusion complex ระหว่าง butylone กับ β-cyclodextrin — นำเสนอที่ PACCON 2024',
-         'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร · Aspen Plus · Computational Chemistry · Molecular Docking',
+         'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร ·วามปลอดภัยในการปฏิบัติการทางเคมี · การวิเคราะห์และเครื่องมือวัด (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
       },
     ],
