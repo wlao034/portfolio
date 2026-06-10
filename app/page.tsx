@@ -525,7 +525,7 @@ const content = {
     languages: [
       { name: 'Thai', level: 'Native', fluent: true },
       { name: 'English', level: 'IELTS 6.5 · TOEIC 830', fluent: true },
-      { name: 'Japanese', level: 'Elementary', fluent: false },
+      { name: '日本語', level: 'Elementary', fluent: false },
       { name: '한국어', level: 'Elementary', fluent: false },
     ],
     certEyebrow: 'Credentials',
