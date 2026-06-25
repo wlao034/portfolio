@@ -533,6 +533,7 @@ const content = {
     certs: [
       
       { label: 'Introduction to Semiconductor Process 1', img: '/kaist1.png' },
+      { label: 'Introduction to Semiconductor Process 2', img: '/kaist2.png' },
       { label: 'Google Data Analysis with Python Specialization', img: '/google.jpeg' },
       { label: 'Poster Presentation — PACCON 2024 (Pure and Applied Chemistry International Conference)', img: '/paccon.jpeg' },
       { label: 'Internship Certificate — Academia Sinica, Institute of Atomic and Molecular Sciences, Taiwan', img: '/sinica.jpeg' },
@@ -648,6 +649,7 @@ const content = {
     certTitle: 'เกียรติบัตรและประกาศนียบัตร',
     certs: [
       { label: 'Introduction to Semiconductor Process 1', img: '/kaist1.png' },
+      { label: 'Introduction to Semiconductor Process 2', img: '/kaist2.png' },
       { label: 'Google Data Analysis with Python Specialization', img: '/google.jpeg' },
       { label: 'Poster Presentation — PACCON 2024 (การประชุมเคมีนานาชาติ Pure and Applied Chemistry)', img: '/paccon.jpeg' },
       { label: 'ใบรับรองการฝึกงาน — Academia Sinica สถาบันวิทยาศาสตร์อะตอมและโมเลกุล ไต้หวัน', img: '/sinica.jpeg' },
