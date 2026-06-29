@@ -531,7 +531,7 @@ const content = {
     certEyebrow: 'Credentials',
     certTitle: 'Certifications',
     certs: [
-      
+      { label: 'SQL Foundations', img: '/sql1.png' },
       { label: 'Introduction to Semiconductor Process 1', img: '/kaist1.png' },
       { label: 'Introduction to Semiconductor Process 2', img: '/kaist2.png' },
       { label: 'Google Data Analysis with Python Specialization', img: '/google.jpeg' },
@@ -648,6 +648,7 @@ const content = {
     certEyebrow: 'ใบรับรอง',
     certTitle: 'เกียรติบัตรและประกาศนียบัตร',
     certs: [
+      { label: 'SQL Foundations', img: '/sql1.png' },
       { label: 'Introduction to Semiconductor Process 1', img: '/kaist1.png' },
       { label: 'Introduction to Semiconductor Process 2', img: '/kaist2.png' },
       { label: 'Google Data Analysis with Python Specialization', img: '/google.jpeg' },
