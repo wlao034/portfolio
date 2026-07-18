@@ -459,58 +459,56 @@ const content = {
     eduTitle: 'Education',
     edu: [
       {
-        
-      degree: 'Master of Medical Engineering',
-      school: 'University of Auckland · New Zealand',
-      period: '2025 – 2026',
-
-      gpa: '7.00 / 9.00',
-
-      thesis:
-        'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
-
-    details: [
-    {
-      title: "Master's Thesis",
-      subtitle: 'Materials Characterisation & Data Analysis',
-
-      link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
-      linkLabel: 'Referee / Supervisor ↗',
-
-      bullets: [
-        'Designed and executed a systematic microindentation workflow to quantitatively characterise neonatal growth plate tissue.',
-        'Applied statistical analysis to high-variance datasets and reconciled experimental findings with published literature.',
-        'Managed the complete experimental pipeline, including cryogenic sample preparation, precision instrumentation, data acquisition, outlier investigation, and publication-quality reporting.'
-       ],
-
-        expertise: [
-          'Materials Characterisation',
-          'Microindentation',
-          'Experimental Design',
-          'Statistical Analysis',
-          'Python',
-          'Research'
-      ]
-      },
-
-      {
-      title: 'Academic Highlights',
-
-        bullets: [
-          'Built and validated supervised machine learning (SVM) models in Python for spectral classification.',
-          'Completed postgraduate coursework in Advanced Functional Materials, Semiconductor & Materials Science, Medical Device Development, Advanced Imaging (OCT, MRI), Machine Learning, and Engineering Project Management.'
-        ],
-
-        expertise: [
-          'Semiconductor',
-          'Medical Devices',
-          'Machine Learning',
-          'Advanced Materials',
-          'Engineering Management'
-        ]
-        }
+        degree: 'Master of Medical Engineering',
+        school: 'University of Auckland · New Zealand',
+        period: '2025 – 2026',
+    
+        gpa: '7.00 / 9.00',
+        thesis:
+          'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
+    
+        details: [
+          {
+            title: "Master's Thesis",
+            subtitle: 'Materials Characterisation & Data Analysis',
+            link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
+            linkLabel: 'Referee / Supervisor ↗',
+    
+            bullets: [
+              'Designed and executed a systematic microindentation workflow to quantitatively characterise neonatal growth plate tissue.',
+              'Applied statistical analysis to high-variance datasets and reconciled experimental findings with published literature.',
+              'Managed the complete experimental pipeline, including cryogenic sample preparation, precision instrumentation, data acquisition, outlier investigation, and publication-quality reporting.'
+            ],
+    
+            expertise: [
+              'Materials Characterisation',
+              'Microindentation',
+              'Experimental Design',
+              'Statistical Analysis',
+              'Python',
+              'Research'
+            ]
+          },
+    
+          {
+            title: 'Academic Highlights',
+    
+            bullets: [
+              'Built and validated supervised machine learning (SVM) models in Python for spectral classification.',
+              'Completed postgraduate coursework in Advanced Functional Materials, Semiconductor & Materials Science, Medical Device Development, Advanced Imaging (OCT, MRI), Machine Learning, and Engineering Project Management.'
+            ],
+    
+            expertise: [
+              'Semiconductor',
+              'Medical Devices',
+              'Machine Learning',
+              'Advanced Materials',
+              'Engineering Management'
+            ]
+          }
         ]
       }
+    ]
       {
         degree: 'Bachelor of Engineering — Chemical Engineering',
         school: 'Thammasat University (Sirindhorn International Institute of Technology (SIIT)) · Thailand',
