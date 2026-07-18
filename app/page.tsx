@@ -276,6 +276,7 @@ nav.scrolled {
 .edu-card.visible { opacity: 1; transform: none; }
 .edu-degree { font-size: 18px; font-weight: 500; margin-bottom: 3px; }
 .edu-school { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+.edu-gpa { font-family: var(--mono); font-size: 12px; color: var(--accent); margin: -10px 0 16px; }
 .edu-period {
   font-family: var(--mono); font-size: 11px; color: var(--muted);
   white-space: nowrap; padding: 5px 12px;
@@ -472,11 +473,11 @@ const content = {
         degree: 'Master of Medical Engineering',
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
+        gpa: '7.00 / 9.00',
         thesis:
           'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
         details: [
-          { 
-            gpa: '7.00 / 9.00',
+          {
             title: "Master's Thesis",
             subtitle: 'Materials Characterisation & Data Analysis',
             link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
@@ -540,8 +541,9 @@ const content = {
         degree: 'Bachelor of Engineering — Chemical Engineering',
         school: 'Thammasat University (Sirindhorn International Institute of Technology (SIIT)) · Thailand',
         period: '2020 – 2024',
+        gpa: '3.22 / 4.00',
         details: [
-          'GPA: 3.22 / 4.00 · International Programme, full English instruction',
+          'International Programme, full English instruction',
           'Senior Project: Theoretical study on butylone inclusion complexes with β-cyclodextrin — presented at PACCON 2024',
          'Coursework: Chemical Reaction Engineering · Process Design · Plant Design · Thermodynamics · Heat & Mass Transfer · Fluid Mechanics · Environmental Engineering · Wastewater Treatment · Food Science · Safety in Chemical Operations · Analytical and Instrumental (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
@@ -639,15 +641,15 @@ const content = {
         degree: 'ปริญญาโท วิศวกรรมการแพทย์',
         school: 'มหาวิทยาลัยออคแลนด์ (University of Auckland) · นิวซีแลนด์',
         period: '2568 – 2569',
+        gpa: '7.00 / 9.00',
         details: [
-          'เกรดเฉลี่ย 7.00 / 9.00',
           'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
           'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning สำหรับชีวการแพทย์ · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
           'จัดทำ Business Case ฉบับเต็มเป็นงานในรายวิชา ครอบคลุมการวางแผนเชิงกลยุทธ์ การวิเคราะห์ธุรกิจและต้นทุน-ผลประโยชน์ การวิเคราะห์ทางการเงิน การบริหารความเสี่ยง และการบริหารผู้มีส่วนได้ส่วนเสีย',
         ],
         tagGroups: [
-          { label: 'ทักษะจากวิทยานิพนธ์ปริญญาโท', tags: ['Microindentation', 'Python', 'ทักษะห้องปฏิบัติการ'] },
-          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'เทคโนโลยีการลดของเสียและการรีไซเคิล', 'Project Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย'] },
+          { label: 'ทักษะจากวิทยานิพนธ์ปริญญาโท', tags: ['การวิเคราะห์ลักษณะวัสดุ (Materials Characterisation)', 'Microindentation', 'การออกแบบการทดลอง', 'การวิเคราะห์ข้อมูลทางสถิติ', 'Python', 'งานวิจัย', 'ทักษะห้องปฏิบัติการ'] },
+          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'อุปกรณ์ชีวการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'วัสดุขั้นสูง', 'เทคโนโลยีการลดของเสียและการรีไซเคิล', 'การบริหารจัดการงานวิศวกรรม', 'Project Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย'] },
           { label: 'ทักษะเพิ่มเติมจากปริญญาโท — คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA'] },
         ],
       },
@@ -655,8 +657,9 @@ const content = {
         degree: 'ปริญญาตรี วิศวกรรมเคมี',
         school: 'มหาวิทยาลัยธรรมศาสตร์ (Sirindhorn International Institute of Technology (SIIT)) · ประเทศไทย',
         period: '2563 – 2567',
+        gpa: '3.22 / 4.00',
         details: [
-          'เกรดเฉลี่ย 3.22 / 4.00 · หลักสูตรนานาชาติ สอนเป็นภาษาอังกฤษทั้งหมด',
+          'หลักสูตรนานาชาติ สอนเป็นภาษาอังกฤษทั้งหมด',
           'โปรเจกต์จบ: การศึกษาเชิงทฤษฎีของ inclusion complex ระหว่าง butylone กับ β-cyclodextrin — นำเสนอที่ PACCON 2024',
          'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร ·ความปลอดภัยในการปฏิบัติการทางเคมี · การวิเคราะห์และเครื่องมือวัด (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
@@ -678,7 +681,7 @@ const content = {
           'ออกแบบและดำเนินการทดลองแบบ DOE และวิเคราะห์ข้อมูลสเปกตรัมด้วย Origin Lab',
           'เพิ่มพูนทักษะด้านการตรวจสอบนาโนวัสดุ หลักการ medical imaging และเครื่องมือวัดความละเอียดสูง',
         ],
-        expertise: ['Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'OriginLab', 'ทักษะห้องปฏิบัติการ'],
+        expertise: ['Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Origin Lab', 'ทักษะห้องปฏิบัติการ'],
       },
       {
         period: '2567 – 2569', org: 'ออคแลนด์ นิวซีแลนด์',
@@ -922,6 +925,7 @@ export default function Home() {
               <div>
                 <h3 className="edu-degree">{e.degree}</h3>
                 <p className="edu-school">{e.school}</p>
+                {e.gpa && <p className="edu-gpa">GPA: {e.gpa}</p>}
 
                 {e.details.length > 0 && isDetailGroup(e.details[0]) ? (
                   // Richer structure: array of detail groups (title/subtitle/bullets/expertise/link)
