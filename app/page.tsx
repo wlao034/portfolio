@@ -459,17 +459,17 @@ const content = {
     eduTitle: 'Education',
     edu: [
       {
-        {
-  degree: 'Master of Medical Engineering',
-  school: 'University of Auckland · New Zealand',
-  period: '2025 – 2026',
+        
+      degree: 'Master of Medical Engineering',
+      school: 'University of Auckland · New Zealand',
+      period: '2025 – 2026',
 
-  gpa: '7.00 / 9.00',
+      gpa: '7.00 / 9.00',
 
-  thesis:
-    'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
+      thesis:
+        'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
 
-  details: [
+    details: [
     {
       title: "Master's Thesis",
       subtitle: 'Materials Characterisation & Data Analysis',
