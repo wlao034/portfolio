@@ -474,8 +474,6 @@ const content = {
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
         gpa: '7.00 / 9.00',
-        thesis:
-          'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
         details: [
           {
             title: "Master's Thesis",
@@ -502,7 +500,8 @@ const content = {
             bullets: [
               'Built and validated supervised machine learning (SVM) models in Python for spectral classification.',
               'Completed postgraduate coursework in Advanced Functional Materials, Semiconductor & Materials Science, Medical Device Development, Advanced Imaging (OCT, MRI), Machine Learning, and Engineering Project Management.',
-              'Developed a full project business case as part of coursework, covering strategic planning, business and cost-benefit analysis, financial analysis, risk management, and stakeholder management.'
+              'Developed a full project business case as part of coursework, covering strategic planning, business and cost-benefit analysis, financial analysis, risk management, and stakeholder management.',
+              'Completed elective coursework in Drug Discovery, covering pharmacodynamics and pharmacokinetics.'
             ],
             expertise: [
               'Semiconductor',
@@ -525,7 +524,10 @@ const content = {
               'Cost-Benefit Analysis',
               'Financial Analysis',
               'Risk Management',
-              'Stakeholder Management'
+              'Stakeholder Management',
+              'Drug Discovery',
+              'Pharmacodynamics',
+              'Pharmacokinetics'
             ]
           },
           {
@@ -549,7 +551,7 @@ const content = {
         ],
         tagGroups: [
           { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] },
-          { label: 'Senior Project / Computational Skills', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
+          { label: 'Senior Project / Computational Skills', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery'] },
         ],
       },
     ],
@@ -644,12 +646,18 @@ const content = {
         gpa: '7.00 / 9.00',
         details: [
           'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
-          'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
+          'ออกแบบและดำเนินการทดสอบ microindentation อย่างเป็นระบบ เพื่อวิเคราะห์คุณสมบัติเชิงปริมาณของเนื้อเยื่อแนวสร้างกระดูกในทารกแรกเกิด',
+          'วิเคราะห์ทางสถิติกับชุดข้อมูลที่มีความแปรปรวนสูง และเปรียบเทียบผลการทดลองกับวรรณกรรมที่ตีพิมพ์',
+          'บริหารจัดการกระบวนการทดลองทั้งหมด ตั้งแต่การเตรียมตัวอย่างแบบแช่แข็ง เครื่องมือวัดความละเอียดสูง การเก็บข้อมูล การตรวจสอบค่าผิดปกติ จนถึงการรายงานผลระดับตีพิมพ์',
+          'สร้างและตรวจสอบโมเดล machine learning แบบ supervised (SVM) ด้วย Python สำหรับการจำแนกข้อมูลสเปกตรัม',
+          'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning สำหรับชีวการแพทย์ · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
           'จัดทำ Business Case ฉบับเต็มเป็นงานในรายวิชา ครอบคลุมการวางแผนเชิงกลยุทธ์ การวิเคราะห์ธุรกิจและต้นทุน-ผลประโยชน์ การวิเคราะห์ทางการเงิน การบริหารความเสี่ยง และการบริหารผู้มีส่วนได้ส่วนเสีย',
+          'ผ่านรายวิชาที่ครอบคลุมระบบคุณภาพสำหรับอุปกรณ์การแพทย์ การบริหารความเสี่ยง และมาตรฐานกำกับดูแล',
+          'ผ่านรายวิชาเลือก Drug Discovery ครอบคลุมเภสัชพลศาสตร์และเภสัชจลนศาสตร์',
         ],
         tagGroups: [
           { label: 'ทักษะจากวิทยานิพนธ์ปริญญาโท', tags: ['การวิเคราะห์ลักษณะวัสดุ (Materials Characterisation)', 'Microindentation', 'การออกแบบการทดลอง', 'การวิเคราะห์ข้อมูลทางสถิติ', 'Python', 'งานวิจัย', 'ทักษะห้องปฏิบัติการ'] },
-          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'อุปกรณ์ชีวการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'วัสดุขั้นสูง', 'เทคโนโลยีการลดของเสียและการรีไซเคิล', 'การบริหารจัดการงานวิศวกรรม', 'Project Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย'] },
+          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'อุปกรณ์ชีวการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'วัสดุขั้นสูง', 'เทคโนโลยีการลดของเสียและการรีไซเคิล', 'การบริหารจัดการงานวิศวกรรม', 'Project Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย', 'การค้นคว้าและพัฒนายา (Drug Discovery)', 'เภสัชพลศาสตร์ (Pharmacodynamics)', 'เภสัชจลนศาสตร์ (Pharmacokinetics)'] },
           { label: 'ทักษะเพิ่มเติมจากปริญญาโท — คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA'] },
         ],
       },
@@ -665,7 +673,7 @@ const content = {
         ],
         tagGroups: [
           { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'P&ID', 'PFD (แผนผังกระบวนการผลิต)', 'HAZOP (การวิเคราะห์ความปลอดภัยกระบวนการ)', 'สมดุลมวลและพลังงาน', 'อุณหพลศาสตร์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'HYSYS', 'วิศวกรรมสิ่งแวดล้อม', 'การบำบัดน้ำเสีย', 'วิทยาศาสตร์การอาหาร', 'การจัดการของเสีย', 'Product Stewardship'] },
-          { label: 'ทักษะจากวิทยานิพนธ์ปริญญาตรี', tags: ['เคมีเชิงคำนวณ', 'การสร้างแบบจำลองเชิงคำนวณ', 'Autodock (Molecular Docking)', 'Gaussian / GaussView', 'Discovery Studio', 'การค้นคว้าและพัฒนายา (Drug Discovery)', 'เภสัชจลนศาสตร์ (Pharmacokinetics)'] },
+          { label: 'ทักษะจากวิทยานิพนธ์ปริญญาตรี', tags: ['เคมีเชิงคำนวณ', 'การสร้างแบบจำลองเชิงคำนวณ', 'Autodock (Molecular Docking)', 'Gaussian / GaussView', 'Discovery Studio', 'การค้นคว้าและพัฒนายา (Drug Discovery)'] },
         ],
       },
     ],
