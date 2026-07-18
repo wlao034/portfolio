@@ -500,7 +500,8 @@ const content = {
             title: 'Academic Highlights',
             bullets: [
               'Built and validated supervised machine learning (SVM) models in Python for spectral classification.',
-              'Completed postgraduate coursework in Advanced Functional Materials, Semiconductor & Materials Science, Medical Device Development, Advanced Imaging (OCT, MRI), Machine Learning, and Engineering Project Management.'
+              'Completed postgraduate coursework in Advanced Functional Materials, Semiconductor & Materials Science, Medical Device Development, Advanced Imaging (OCT, MRI), Machine Learning, and Engineering Project Management.',
+              'Developed a full project business case as part of coursework, covering strategic planning, business and cost-benefit analysis, financial analysis, risk management, and stakeholder management.'
             ],
             expertise: [
               'Semiconductor',
@@ -516,7 +517,14 @@ const content = {
               'Nanomaterials',
               'Advanced Materials',
               'Waste Reduction and Recycling Technologies',
-              'Engineering Management'
+              'Engineering Management',
+              'Project Business Case Development',
+              'Strategic Planning',
+              'Business Analysis',
+              'Cost-Benefit Analysis',
+              'Financial Analysis',
+              'Risk Management',
+              'Stakeholder Management'
             ]
           },
           {
@@ -570,7 +578,7 @@ const content = {
     skillsEyebrow: 'Capabilities',
     skillsTitle: 'Skills',
     skills: [
-      { label: 'Software Tools & Professional Skills+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'Project Management', 'Cross-functional Leadership', 'Critical Thinking', 'Problem Solving', 'Time Management', 'Cross-Cultural Communication', 'Teamwork', '5S Workplace Organization', 'Project Business Case Development', 'Strategic Planning', 'Business Analysis', 'Cost-Benefit Analysis', 'Financial Analysis', 'Risk Management', 'Stakeholder Management'] },
+      { label: 'Software Tools & Professional Skills+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'Project Management', 'Cross-functional Leadership', 'Critical Thinking', 'Problem Solving', 'Time Management', 'Cross-Cultural Communication', 'Teamwork', '5S Workplace Organization'] },
     ],
     langEyebrow: 'Languages',
     languages: [
@@ -635,10 +643,11 @@ const content = {
           'เกรดเฉลี่ย 7.00 / 9.00',
           'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
           'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning สำหรับชีวการแพทย์ · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
+          'จัดทำ Business Case ฉบับเต็มเป็นงานในรายวิชา ครอบคลุมการวางแผนเชิงกลยุทธ์ การวิเคราะห์ธุรกิจและต้นทุน-ผลประโยชน์ การวิเคราะห์ทางการเงิน การบริหารความเสี่ยง และการบริหารผู้มีส่วนได้ส่วนเสีย',
         ],
         tagGroups: [
           { label: 'ทักษะจากวิทยานิพนธ์ปริญญาโท', tags: ['ไมโครอินเดนเทชัน (Microindentation)', 'Python', 'ทักษะห้องปฏิบัติการ'] },
-          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'เทคโนโลยีการลดของเสียและการรีไซเคิล'] },
+          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'เทคโนโลยีการลดของเสียและการรีไซเคิล', 'Project Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย'] },
           { label: 'ทักษะเพิ่มเติมจากปริญญาโท — คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA'] },
         ],
       },
@@ -694,7 +703,7 @@ const content = {
     skillsEyebrow: 'ความสามารถ',
     skillsTitle: 'ทักษะ',
     skills: [
-      { label: 'เครื่องมือซอฟต์แวร์ & ทักษะวิชาชีพ+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'การบริหารโครงการ', 'นำทีมข้ามสายงาน', 'คิดวิเคราะห์', 'แก้ปัญหา', 'บริหารเวลา', 'สื่อสารข้ามวัฒนธรรม', 'ทำงานเป็นทีม', '5ส (5S)', 'Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย'] },
+      { label: 'เครื่องมือซอฟต์แวร์ & ทักษะวิชาชีพ+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'การบริหารโครงการ', 'นำทีมข้ามสายงาน', 'คิดวิเคราะห์', 'แก้ปัญหา', 'บริหารเวลา', 'สื่อสารข้ามวัฒนธรรม', 'ทำงานเป็นทีม', '5ส (5S)'] },
     ],
     langEyebrow: 'ภาษา',
     languages: [
