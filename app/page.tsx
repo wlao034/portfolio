@@ -508,7 +508,7 @@ const content = {
           }
         ]
       }
-    ]
+  
       {
         degree: 'Bachelor of Engineering — Chemical Engineering',
         school: 'Thammasat University (Sirindhorn International Institute of Technology (SIIT)) · Thailand',
