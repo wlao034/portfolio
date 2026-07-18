@@ -463,6 +463,7 @@ const content = {
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
         details: [
+          'GPA: 7.00 / 9.00',
           'Thesis: Microstructural & Mechanical characterisation of new born lamb cartilage & growthplate',
           'Coursework: Advanced Functional Materials · Semiconductor & Materials Science · Medical Device & Technology Development · Advanced Imaging (OCT, MRI, Ultrasound) · Machine Learning for Biomedical Applications · Engineering Project Management · Drug Disposition & Kinetics · Waste Management · Product Stewardship',
         ],
@@ -581,6 +582,7 @@ const content = {
         school: 'มหาวิทยาลัยออคแลนด์ (University of Auckland) · นิวซีแลนด์',
         period: '2568 – 2569',
         details: [
+          'เกรดเฉลี่ย 7.00 / 9.00',
           'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
           'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning สำหรับชีวการแพทย์ · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
         ],
