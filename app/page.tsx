@@ -462,7 +462,15 @@ const content = {
         degree: 'Master of Medical Engineering',
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
+  
         details: [
+          title: "Master's Thesis", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
+          linkLabel: 'Referee / Supervisor ↗',
+          bullets: [
+          'Performed microindentation mechanical testing on biological tissue samples across articular cartilage and growth plate sub-structures',
+          'Applied critical analysis to reconcile conflicting experimental data and form evidence-based conclusions',
+          'Developed expertise in precision instrumentation, sample preparation, and quantitative data interpretation',
+        ],
           'GPA: 7.00 / 9.00',
           'Thesis: Microstructural & Mechanical characterisation of new born lamb cartilage & growthplate',
           'Coursework: Advanced Functional Materials · Semiconductor & Materials Science · Medical Device & Technology Development · Advanced Imaging (OCT, MRI, Ultrasound) · Machine Learning for Biomedical Applications · Engineering Project Management · Drug Disposition & Kinetics · Waste Management · Product Stewardship',
@@ -482,16 +490,6 @@ const content = {
     expEyebrow: 'Work & Research',
     expTitle: 'Experience',
     exp: [
-      {
-        period: '2025 – Present', org: 'University of Auckland',
-        title: "Master's Thesis", link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
-        linkLabel: 'Referee / Supervisor ↗',
-        bullets: [
-          'Performed microindentation mechanical testing on biological tissue samples across articular cartilage and growth plate sub-structures',
-          'Applied critical analysis to reconcile conflicting experimental data and form evidence-based conclusions',
-          'Developed expertise in precision instrumentation, sample preparation, and quantitative data interpretation',
-        ],
-      },
       {
         period: 'Jun – Jul 2023', org: 'Academia Sinica, Taiwan',
         title: 'Research Intern — SWCNTs Defect Characterisation',
