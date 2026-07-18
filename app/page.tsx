@@ -517,6 +517,7 @@ const content = {
               'Nanomaterials',
               'Advanced Materials',
               'Waste Reduction and Recycling Technologies',
+              'Product Stewardship'
               'Engineering Management',
               'Project Business Case Development',
               'Strategic Planning',
@@ -550,7 +551,7 @@ const content = {
          'Coursework: Chemical Reaction Engineering · Process Design · Plant Design · Thermodynamics · Heat & Mass Transfer · Fluid Mechanics · Environmental Engineering · Wastewater Treatment · Food Science · Safety in Chemical Operations · Analytical and Instrumental (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
         tagGroups: [
-          { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] },
+          { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management'] },
           { label: 'Senior Project / Computational Skills', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery'] },
         ],
       },
@@ -672,7 +673,7 @@ const content = {
          'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร ·ความปลอดภัยในการปฏิบัติการทางเคมี · การวิเคราะห์และเครื่องมือวัด (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
         tagGroups: [
-          { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'P&ID', 'PFD (แผนผังกระบวนการผลิต)', 'HAZOP (การวิเคราะห์ความปลอดภัยกระบวนการ)', 'สมดุลมวลและพลังงาน', 'อุณหพลศาสตร์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'HYSYS', 'วิศวกรรมสิ่งแวดล้อม', 'การบำบัดน้ำเสีย', 'วิทยาศาสตร์การอาหาร', 'การจัดการของเสีย', 'Product Stewardship'] },
+          { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'P&ID', 'PFD (แผนผังกระบวนการผลิต)', 'HAZOP (การวิเคราะห์ความปลอดภัยกระบวนการ)', 'สมดุลมวลและพลังงาน', 'อุณหพลศาสตร์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'HYSYS', 'วิศวกรรมสิ่งแวดล้อม', 'การบำบัดน้ำเสีย', 'วิทยาศาสตร์การอาหาร', 'การจัดการของเสีย'] },
           { label: 'ทักษะจากวิทยานิพนธ์ปริญญาตรี', tags: ['เคมีเชิงคำนวณ', 'การสร้างแบบจำลองเชิงคำนวณ', 'Autodock (Molecular Docking)', 'Gaussian / GaussView', 'Discovery Studio', 'การค้นคว้าและพัฒนายา (Drug Discovery)'] },
         ],
       },
