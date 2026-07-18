@@ -285,6 +285,14 @@ nav.scrolled {
 .edu-details li { font-size: 13px; color: var(--muted); line-height: 1.8; padding: 3px 0 3px 14px; position: relative; }
 .edu-details li::before { content: '–'; position: absolute; left: 0; color: var(--dim); }
 
+/* EDU — richer sub-section groups (used when an entry's details are structured objects) */
+.edu-detail-group { margin-bottom: 22px; }
+.edu-detail-group:last-child { margin-bottom: 0; }
+.edu-group-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.edu-group-subtitle { font-size: 12px; color: var(--muted); margin-bottom: 10px; font-style: italic; }
+.edu-detail-group .skill-tags { margin-top: 10px; }
+.edu-detail-group .exp-link { margin-top: 12px; }
+
 /* EXP */
 .exp-card {
   padding: 36px 0; border-bottom: 1px solid var(--border);
@@ -316,14 +324,16 @@ nav.scrolled {
 .exp-link svg { flex-shrink: 0; }
 
 /* SKILLS */
-.skills-grid { display: flex; flex-direction: column; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
 .skill-row {
-  display: grid; grid-template-columns: 200px 1fr; gap: 32px;
-  padding: 20px 0; border-bottom: 1px solid var(--border); align-items: start;
-  opacity: 0; transform: translateY(12px); transition: opacity 0.5s, transform 0.5s;
+  background: var(--white); border: 1px solid var(--border); border-radius: 12px;
+  padding: 24px; display: flex; flex-direction: column; gap: 14px;
+  opacity: 0; transform: translateY(12px);
+  transition: opacity 0.5s, transform 0.5s, border-color 0.2s, box-shadow 0.3s;
 }
 .skill-row.visible { opacity: 1; transform: none; }
-.skill-label { font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--muted); padding-top: 4px; }
+.skill-row:hover { border-color: var(--accent); box-shadow: 0 8px 24px rgba(26,122,94,0.1); transform: translateY(-3px); }
+.skill-label { font-size: 12px; font-weight: 500; letter-spacing: 0.04em; color: var(--muted); }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill-tag {
   padding: 5px 14px; border: 1px solid var(--border); border-radius: 100px;
@@ -418,7 +428,7 @@ footer {
   .edu-card { grid-template-columns: 1fr; gap: 8px; }
   .edu-period { order: -1; display: inline-flex; width: fit-content; }
   .exp-card { grid-template-columns: 1fr; gap: 8px; }
-  .skill-row { grid-template-columns: 1fr; gap: 10px; }
+  .skills-grid { grid-template-columns: 1fr; }
   .lang-grid { grid-template-columns: repeat(3, 1fr); }
   .cert-grid { grid-template-columns: 1fr; }
   .contact-section { padding: 48px 20px; }
@@ -462,53 +472,62 @@ const content = {
         degree: 'Master of Medical Engineering',
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
-    
         gpa: '7.00 / 9.00',
         thesis:
           'Quantitative mechanical characterisation of neonatal growth plate tissue using nanoindentation and microindentation.',
-    
         details: [
           {
             title: "Master's Thesis",
             subtitle: 'Materials Characterisation & Data Analysis',
             link: 'https://profiles.auckland.ac.nz/ashvin-thambyah',
             linkLabel: 'Referee / Supervisor ↗',
-    
             bullets: [
               'Designed and executed a systematic microindentation workflow to quantitatively characterise neonatal growth plate tissue.',
               'Applied statistical analysis to high-variance datasets and reconciled experimental findings with published literature.',
               'Managed the complete experimental pipeline, including cryogenic sample preparation, precision instrumentation, data acquisition, outlier investigation, and publication-quality reporting.'
             ],
-    
             expertise: [
               'Materials Characterisation',
               'Microindentation',
               'Experimental Design',
               'Statistical Analysis',
               'Python',
-              'Research'
+              'Research',
+              'Lab Skills'
             ]
           },
-    
           {
             title: 'Academic Highlights',
-    
             bullets: [
               'Built and validated supervised machine learning (SVM) models in Python for spectral classification.',
               'Completed postgraduate coursework in Advanced Functional Materials, Semiconductor & Materials Science, Medical Device Development, Advanced Imaging (OCT, MRI), Machine Learning, and Engineering Project Management.'
             ],
-    
             expertise: [
               'Semiconductor',
               'Medical Devices',
+              'Biomedical Devices',
               'Machine Learning',
+              'Data Analysis',
+              'Statistical Analysis',
+              'Medical Imaging',
+              'OCT',
+              'Functional Materials',
+              'Nanotechnology',
+              'Nanomaterials',
               'Advanced Materials',
+              'Waste Reduction and Recycling Technologies',
               'Engineering Management'
             ]
+          },
+          {
+            title: 'Quality, Risk & Regulatory Coursework',
+            bullets: [
+              'Completed coursework covering medical device quality systems, risk management, and regulatory standards.'
+            ],
+            expertise: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA']
           }
         ]
-      }
-  ,
+      },
       {
         degree: 'Bachelor of Engineering — Chemical Engineering',
         school: 'Thammasat University (Sirindhorn International Institute of Technology (SIIT)) · Thailand',
@@ -517,6 +536,10 @@ const content = {
           'GPA: 3.22 / 4.00 · International Programme, full English instruction',
           'Senior Project: Theoretical study on butylone inclusion complexes with β-cyclodextrin — presented at PACCON 2024',
          'Coursework: Chemical Reaction Engineering · Process Design · Plant Design · Thermodynamics · Heat & Mass Transfer · Fluid Mechanics · Environmental Engineering · Wastewater Treatment · Food Science · Safety in Chemical Operations · Analytical and Instrumental (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
+        ],
+        tagGroups: [
+          { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] },
+          { label: 'Senior Project / Computational Skills', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
         ],
       },
     ],
@@ -532,6 +555,7 @@ const content = {
           'Designed and executed DOE-style experiments; analysed spectral data using Origin Lab',
           'Gained proficiency in nanomaterial characterisation, medical imaging principles, and precision instrumentation',
         ],
+        expertise: ['Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Origin Lab', 'Lab Skills'],
       },
       {
         period: '2024 – 2026', org: 'Auckland, New Zealand',
@@ -546,12 +570,7 @@ const content = {
     skillsEyebrow: 'Capabilities',
     skillsTitle: 'Skills',
     skills: [
-      { label: 'Data & Computing', tags: ['Python', 'Machine Learning', 'Data Analysis', 'Statistical Analysis', 'SQL', 'Power BI', 'Origin Lab', 'Excel', 'Word', 'PowerPoint'] },
-      { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management', 'Product Stewardship'] },
-      { label: 'Biomedical & Lab', tags: ['Nanoindentation', 'Microindentation', 'Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Medical Imaging', 'OCT', 'Functional Materials', 'Semiconductor', 'Nanotechnology', 'Nanomaterials', 'Biomedical Devices', 'Lab Skills'] },
-      { label: 'Computational', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
-      { label: 'Quality & Regulatory', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC','ESG', 'LCA'] },
-      { label: 'Project & Leadership', tags: ['Project Management', 'Cross-functional Leadership', 'Critical Thinking', 'Problem Solving', 'Time Management', 'Cross-Cultural Communication', 'Teamwork'] },
+      { label: 'Software Tools & Professional Skills+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'Project Management', 'Cross-functional Leadership', 'Critical Thinking', 'Problem Solving', 'Time Management', 'Cross-Cultural Communication', 'Teamwork', '5S Workplace Organization', 'Project Business Case Development', 'Strategic Planning', 'Business Analysis', 'Cost-Benefit Analysis', 'Financial Analysis', 'Risk Management', 'Stakeholder Management'] },
     ],
     langEyebrow: 'Languages',
     languages: [
@@ -617,6 +636,11 @@ const content = {
           'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
           'วิชาเรียน: วัสดุฟังก์ชันขั้นสูง · วิทยาศาสตร์เซมิคอนดักเตอร์ · การพัฒนาอุปกรณ์การแพทย์ · การถ่ายภาพขั้นสูง (OCT, MRI, อัลตราซาวด์) · Machine Learning สำหรับชีวการแพทย์ · การจัดการโครงการ · Drug Disposition & Kinetics · การจัดการของเสีย · Product Stewardship',
         ],
+        tagGroups: [
+          { label: 'ทักษะจากวิทยานิพนธ์ปริญญาโท', tags: ['ไมโครอินเดนเทชัน (Microindentation)', 'Python', 'ทักษะห้องปฏิบัติการ'] },
+          { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'เทคโนโลยีการลดของเสียและการรีไซเคิล'] },
+          { label: 'ทักษะเพิ่มเติมจากปริญญาโท — คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA'] },
+        ],
       },
       {
         degree: 'ปริญญาตรี วิศวกรรมเคมี',
@@ -626,6 +650,10 @@ const content = {
           'เกรดเฉลี่ย 3.22 / 4.00 · หลักสูตรนานาชาติ สอนเป็นภาษาอังกฤษทั้งหมด',
           'โปรเจกต์จบ: การศึกษาเชิงทฤษฎีของ inclusion complex ระหว่าง butylone กับ β-cyclodextrin — นำเสนอที่ PACCON 2024',
          'วิชาเรียน: Chemical Reaction Engineering · Process Design · Plant Design · เทอร์โมไดนามิกส์ · การถ่ายเทความร้อนและมวล · กลศาสตร์ของไหล · วิศวกรรมสิ่งแวดล้อม · บำบัดน้ำเสีย · วิทยาศาสตร์อาหาร ·ความปลอดภัยในการปฏิบัติการทางเคมี · การวิเคราะห์และเครื่องมือวัด (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
+        ],
+        tagGroups: [
+          { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'P&ID', 'PFD (แผนผังกระบวนการผลิต)', 'HAZOP (การวิเคราะห์ความปลอดภัยกระบวนการ)', 'สมดุลมวลและพลังงาน', 'อุณหพลศาสตร์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'HYSYS', 'วิศวกรรมสิ่งแวดล้อม', 'การบำบัดน้ำเสีย', 'วิทยาศาสตร์การอาหาร', 'การจัดการของเสีย', 'Product Stewardship'] },
+          { label: 'ทักษะจากวิทยานิพนธ์ปริญญาตรี', tags: ['เคมีเชิงคำนวณ', 'การสร้างแบบจำลองเชิงคำนวณ', 'Autodock (Molecular Docking)', 'Gaussian / GaussView', 'Discovery Studio', 'การค้นคว้าและพัฒนายา (Drug Discovery)', 'เภสัชจลนศาสตร์ (Pharmacokinetics)'] },
         ],
       },
     ],
@@ -651,6 +679,7 @@ const content = {
           'ออกแบบและดำเนินการทดลองแบบ DOE และวิเคราะห์ข้อมูลสเปกตรัมด้วย Origin Lab',
           'เพิ่มพูนทักษะด้านการตรวจสอบนาโนวัสดุ หลักการ medical imaging และเครื่องมือวัดความละเอียดสูง',
         ],
+        expertise: ['ฟลูออเรสเซนซ์สเปกโทรสโกปี', 'แอบซอร์บแบนซ์สเปกโทรสโกปี', 'OriginLab', 'ทักษะห้องปฏิบัติการ'],
       },
       {
         period: '2567 – 2569', org: 'ออคแลนด์ นิวซีแลนด์',
@@ -665,12 +694,7 @@ const content = {
     skillsEyebrow: 'ความสามารถ',
     skillsTitle: 'ทักษะ',
     skills: [
-      { label: 'ข้อมูลและคอมพิวเตอร์', tags: ['Python', 'Machine Learning', 'วิเคราะห์ข้อมูล', 'สถิติ', 'SQL', 'Power BI', 'Origin Lab', 'Excel', 'Word', 'PowerPoint'] },
-      { label: 'วิศวกรรมและกระบวนการ', tags: ['วิศวกรรมเคมี', 'วิศวกรรมกระบวนการ', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'เทอร์โมไดนามิกส์', 'การถ่ายเทความร้อนและมวล', 'Aspen Plus', 'HYSYS', 'วิศวกรรมสิ่งแวดล้อม', 'บำบัดน้ำเสีย', 'วิทยาศาสตร์อาหาร', 'การจัดการของเสีย', 'Product Stewardship'] },
-      { label: 'ชีวการแพทย์และห้องปฏิบัติการ', tags: ['Nanoindentation', 'Microindentation', 'Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Medical Imaging', 'OCT', 'วัสดุฟังก์ชัน', 'Semiconductor', 'Nanotechnology', 'Nanomaterials', 'อุปกรณ์การแพทย์', 'ทักษะห้องปฏิบัติการ'] },
-      { label: 'การคำนวณ', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery', 'Drug Disposition & Kinetics'] },
-      { label: 'คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'CAPA', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC','ESG','LCA'] },
-      { label: 'การจัดการและภาวะผู้นำ', tags: ['การบริหารโครงการ', 'นำทีมข้ามสายงาน', 'คิดวิเคราะห์', 'แก้ปัญหา', 'บริหารเวลา', 'สื่อสารข้ามวัฒนธรรม', 'ทำงานเป็นทีม'] },
+      { label: 'เครื่องมือซอฟต์แวร์ & ทักษะวิชาชีพ+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'การบริหารโครงการ', 'นำทีมข้ามสายงาน', 'คิดวิเคราะห์', 'แก้ปัญหา', 'บริหารเวลา', 'สื่อสารข้ามวัฒนธรรม', 'ทำงานเป็นทีม', '5ส (5S)', 'Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย'] },
     ],
     langEyebrow: 'ภาษา',
     languages: [
@@ -703,6 +727,20 @@ const content = {
 } as const
 
 type Lang = 'en' | 'th'
+
+// A single education entry's `details` array can be EITHER:
+//  - an array of plain strings (simple bullet list), or
+//  - an array of "detail groups" (title/subtitle/bullets/expertise/link) for a richer sub-sectioned layout.
+function isDetailGroup(d: unknown): d is {
+  title?: string
+  subtitle?: string
+  link?: string
+  linkLabel?: string
+  bullets: string[]
+  expertise?: string[]
+} {
+  return typeof d === 'object' && d !== null && 'bullets' in (d as any)
+}
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>('en')
@@ -880,12 +918,53 @@ export default function Home() {
         <section className="section" id="education">
           <p className="section-eyebrow">{t.eduEyebrow}</p>
           <h2 className="section-title"><span>{t.eduTitle}</span></h2>
-          {t.edu.map((e, i) => (
+          {t.edu.map((e: any, i) => (
             <div key={i} className="edu-card animate-on-scroll" style={{ transitionDelay: `${i * 0.12}s` }}>
               <div>
                 <h3 className="edu-degree">{e.degree}</h3>
                 <p className="edu-school">{e.school}</p>
-                <ul className="edu-details">{e.details.map((d, j) => <li key={j}>{d}</li>)}</ul>
+
+                {e.details.length > 0 && isDetailGroup(e.details[0]) ? (
+                  // Richer structure: array of detail groups (title/subtitle/bullets/expertise/link)
+                  <div className="edu-detail-groups">
+                    {e.details.map((group: any, j: number) => (
+                      <div key={j} className="edu-detail-group">
+                        {group.title && <p className="edu-group-title">{group.title}</p>}
+                        {group.subtitle && <p className="edu-group-subtitle">{group.subtitle}</p>}
+                        <ul className="edu-details">
+                          {group.bullets.map((b: string, k: number) => <li key={k}>{b}</li>)}
+                        </ul>
+                        {group.expertise && (
+                          <div className="skill-tags">
+                            {group.expertise.map((tag: string) => <span key={tag} className="skill-tag">{tag}</span>)}
+                          </div>
+                        )}
+                        {group.link && (
+                          <a href={group.link} target="_blank" rel="noreferrer" className="exp-link">
+                            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 10L10 2M10 2H5M10 2V7" /></svg>
+                            {group.linkLabel ?? t.visitBtn}
+                          </a>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  // Simple structure: plain array of strings
+                  <ul className="edu-details">{e.details.map((d: string, j: number) => <li key={j}>{d}</li>)}</ul>
+                )}
+
+                {e.tagGroups && (
+                  <div className="edu-detail-groups">
+                    {e.tagGroups.map((group: any, j: number) => (
+                      <div key={j} className="edu-detail-group">
+                        {group.label && <p className="edu-group-title">{group.label}</p>}
+                        <div className="skill-tags">
+                          {group.tags.map((tag: string) => <span key={tag} className="skill-tag">{tag}</span>)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
               <span className="edu-period">{e.period}</span>
             </div>
@@ -897,12 +976,17 @@ export default function Home() {
         <section className="section" id="experience">
           <p className="section-eyebrow">{t.expEyebrow}</p>
           <h2 className="section-title"><span>{t.expTitle}</span></h2>
-          {t.exp.map((e, i) => (
+          {t.exp.map((e: any, i) => (
             <div key={i} className="exp-card animate-on-scroll" style={{ transitionDelay: `${i * 0.1}s` }}>
               <div><p className="exp-period">{e.period}</p><p className="exp-org">{e.org}</p></div>
               <div>
                 <h3 className="exp-title">{e.title}</h3>
-                <ul className="exp-bullets">{e.bullets.map((b, j) => <li key={j} dangerouslySetInnerHTML={{ __html: b }} />)}</ul>
+                <ul className="exp-bullets">{e.bullets.map((b: string, j: number) => <li key={j} dangerouslySetInnerHTML={{ __html: b }} />)}</ul>
+                {e.expertise && (
+                  <div className="skill-tags" style={{ marginTop: 12 }}>
+                    {e.expertise.map((tag: string) => <span key={tag} className="skill-tag">{tag}</span>)}
+                  </div>
+                )}
                 {e.link && (
                   <a href={e.link} target="_blank" rel="noreferrer" className="exp-link">
                     <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 10L10 2M10 2H5M10 2V7" /></svg>
