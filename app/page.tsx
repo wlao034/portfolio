@@ -536,7 +536,7 @@ const content = {
             bullets: [
               'Completed coursework covering medical device quality systems, risk management, and regulatory standards.'
             ],
-            expertise: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis','Root Cause Analysis',  'CAPA', 'Design Verification & Validation (V&V)', 'Regulatory documentation' ,'Clinical trial/study basic awareness' , 'Consumer/Product Safety Assessment' , 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA']
+            expertise: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis','Root Cause Analysis',  'CAPA', 'Design Verification & Validation (V&V)', 'Compliance', 'Regulatory documentation' ,'Clinical trial/study basic awareness' , 'Consumer/Product Safety Assessment' , 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA']
           }
         ]
       },
@@ -659,7 +659,7 @@ const content = {
         tagGroups: [
           { label: 'ทักษะจากวิทยานิพนธ์ปริญญาโท', tags: ['การวิเคราะห์ลักษณะวัสดุ (Materials Characterisation)', 'Microindentation', 'การออกแบบการทดลอง', 'การวิเคราะห์ข้อมูลทางสถิติ', 'Python', 'งานวิจัย', 'ทักษะห้องปฏิบัติการ'] },
           { label: 'ไฮไลท์ทางวิชาการ (Academic Highlights)', tags: ['สารกึ่งตัวนำ (Semiconductor)', 'อุปกรณ์ทางการแพทย์', 'อุปกรณ์ชีวการแพทย์', 'Machine Learning', 'การวิเคราะห์ข้อมูล', 'การวิเคราะห์ข้อมูลทางสถิติ', 'เทคโนโลยีการถ่ายภาพทางการแพทย์', 'OCT', 'วัสดุฟังก์ชัน', 'นาโนเทคโนโลยี', 'วัสดุนาโน', 'วัสดุขั้นสูง', 'เทคโนโลยีการลดของเสียและการรีไซเคิล', 'Product Stewardship', 'การบริหารจัดการงานวิศวกรรม', 'Project Business Case Development', 'การวางแผนเชิงกลยุทธ์', 'การวิเคราะห์ธุรกิจ', 'การวิเคราะห์ต้นทุนและผลประโยชน์', 'การวิเคราะห์ทางการเงิน', 'การบริหารจัดการความเสี่ยง', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย', 'การค้นคว้าและพัฒนายา (Drug Discovery)', 'เภสัชพลศาสตร์ (Pharmacodynamics)', 'เภสัชจลนศาสตร์ (Pharmacokinetics)'] },
-          { label: 'ทักษะเพิ่มเติมจากปริญญาโท — คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'Root Cause Analysis', 'CAPA', 'Design Verification & Validation (V&V)','เอกสารด้านกฎระเบียบ', 'การทดลองและการศึกษาทางคลินิก', 'การประเมินความปลอดภัยของผลิตภัณฑ์', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA'] },
+          { label: 'ทักษะเพิ่มเติมจากปริญญาโท — คุณภาพและกฎระเบียบ', tags: ['GMP', 'ISO 13485', 'ISO 14971', 'IEC 60601', 'IEC 62366', 'FMEA', 'Fault Tree Analysis', 'Root Cause Analysis', 'CAPA', 'Design Verification & Validation (V&V)', 'Compliance','เอกสารด้านกฎระเบียบ', 'การทดลองและการศึกษาทางคลินิก', 'การประเมินความปลอดภัยของผลิตภัณฑ์', 'Six Sigma', 'Lean / Kaizen', 'DOE', 'SPC', 'ESG', 'LCA'] },
         ],
       },
       {
