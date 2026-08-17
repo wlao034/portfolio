@@ -470,10 +470,10 @@ const content = {
     eduTitle: 'Education',
     edu: [
       {
-        degree: 'Master of Medical Engineering, Graduated with Distinction (equivalent to First Class)',
+        degree: 'Master of Medical Engineering',
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
-        gpa: '7.00 / 9.00',
+        gpa: '7.00 / 9.00 Graduated with Distinction (equivalent to First Class)',
         details: [
           {
             title: "Master's Thesis",
@@ -641,10 +641,10 @@ const content = {
     eduTitle: 'การศึกษา',
     edu: [
       {
-        degree: 'ปริญญาโทวิศวกรรมการแพทย์ สำเร็จการศึกษาด้วยเกียรตินิยมอันดับ Distinction (เกียรตินิยมสูงสุด เทียบเท่าอันดับ 1)',
+        degree: 'ปริญญาโทวิศวกรรมการแพทย์',
         school: 'มหาวิทยาลัยออคแลนด์ (University of Auckland) · นิวซีแลนด์',
         period: '2568 – 2569',
-        gpa: '7.00 / 9.00',
+        gpa: '7.00 / 9.00 สำเร็จการศึกษาด้วยเกียรตินิยมอันดับ Distinction (เกียรตินิยมสูงสุด เทียบเท่าอันดับ 1)',
         details: [
           'วิทยานิพนธ์: การศึกษาโครงสร้างระดับจุลภาค (Microstructural) และคุณสมบัติทางกล (Mechanical characterization) ของกระดูกอ่อน (cartilage) และแนวสร้างกระดูก (growth plate) ในลูกแกะแรกเกิด',
           'ออกแบบและดำเนินการทดสอบ microindentation อย่างเป็นระบบ เพื่อวิเคราะห์คุณสมบัติเชิงปริมาณของเนื้อเยื่อแนวสร้างกระดูกในทารกแรกเกิด',
