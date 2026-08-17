@@ -470,7 +470,7 @@ const content = {
     eduTitle: 'Education',
     edu: [
       {
-        degree: 'Master of Medical Engineering, Graduated with Distinction (top academic honour, equivalent to First Class)',
+        degree: 'Master of Medical Engineering, Graduated with Distinction (equivalent to First Class)',
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
         gpa: '7.00 / 9.00',
