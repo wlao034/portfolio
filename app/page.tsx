@@ -167,8 +167,21 @@ nav.scrolled {
   pointer-events: none;
 }
 .hero-left {
+  flex: 1.3;
   display: flex; flex-direction: column; justify-content: center;
   padding: 120px 64px 80px; position: relative; z-index: 1;
+}
+.hero-right {
+  flex: 0.7;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 120px 64px 80px 0; position: relative; z-index: 1;
+}
+.hero-photo {
+  width: 100%; max-width: 320px; aspect-ratio: 3 / 4;
+  object-fit: cover; border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(26,26,26,0.12);
+  opacity: 0; animation: fadeUp 0.8s 0.3s forwards;
+  margin-top: 4px;
 }
 .hero-tag {
   display: inline-flex; align-items: center; gap: 8px;
@@ -422,8 +435,15 @@ footer {
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 
+@media (max-width: 968px) {
+  .hero { flex-direction: column; }
+  .hero-right { order: -1; padding: 96px 24px 20px; }
+  .hero-photo { max-width: 260px; }
+}
+
 @media (max-width: 768px) {
-  .hero-left { padding: 96px 24px 40px; }
+  .hero-left { padding: 40px 24px 40px; }
+  .hero-right { padding: 96px 24px 20px; }
   .stats-row { grid-template-columns: 1fr; gap: 28px; padding: 40px 24px; }
   .section { padding: 40px 20px; }
   .edu-card { grid-template-columns: 1fr; gap: 8px; }
@@ -910,6 +930,9 @@ export default function Home() {
               <a href="#experience" className="btn-primary">{t.heroBtn1}</a>
               <a href="#contact" className="btn-outline">{t.heroBtn2}</a>
             </div>
+          </div>
+          <div className="hero-right">
+            <img src="/profile.png" alt={t.heroName} className="hero-photo" />
           </div>
         </section>
 
