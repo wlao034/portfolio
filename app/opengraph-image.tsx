@@ -7,7 +7,7 @@ export const contentType = 'image/png'
 
 export default async function OGImage() {
   const imageData = await fetch(
-    new URL('../public/profile.jpg', import.meta.url)
+    new URL('../public/profile.png', import.meta.url)
   ).then((res) => res.arrayBuffer())
 
   return new ImageResponse(
