@@ -541,7 +541,7 @@ const content = {
         ]
       },
       {
-        degree: 'Bachelor of Engineering — Chemical Engineering',
+        degree: 'Bachelor of Chemical Engineering',
         school: 'Thammasat University (Sirindhorn International Institute of Technology (SIIT)) · Thailand',
         period: '2020 – 2024',
         gpa: '3.22 / 4.00',
