@@ -932,7 +932,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-right">
-            <img src="/profile.png" alt={t.heroName} className="hero-photo" />
+            <img src="/profile.jpg" alt={t.heroName} className="hero-photo" />
           </div>
         </section>
 
