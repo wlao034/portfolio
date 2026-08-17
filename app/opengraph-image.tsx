@@ -3,11 +3,11 @@ import { ImageResponse } from 'next/og'
 export const runtime = 'edge'
 export const alt = 'Waraitip Laosangprateep — Engineering Portfolio'
 export const size = { width: 1200, height: 630 }
-export const contentType = 'image/jpg'
+export const contentType = 'image/png'
 
 export default async function OGImage() {
   const imageData = await fetch(
-    new URL('../public/IMG_5117.JPG', import.meta.url)
+    new URL('../public/ptofile.jpg', import.meta.url)
   ).then((res) => res.arrayBuffer())
 
   return new ImageResponse(
