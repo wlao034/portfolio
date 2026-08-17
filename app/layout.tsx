@@ -14,7 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Waraitip Laosangprateep — Engineering Portfolio",
-  description: "Open to roles in Singapore, South Korea,Thailand & beyond.",
+  description: "Open to roles in Singapore, South Korea, Thailand & beyond.",
+  openGraph: {
+    title: "Waraitip Laosangprateep — Engineering Portfolio",
+    description: "Open to roles in Singapore, South Korea, Thailand & beyond.",
+    url: "https://portfoliowar.vercel.app",
+    siteName: "Waraitip Laosangprateep Portfolio",
+  },
 };
 
 export default function RootLayout({
