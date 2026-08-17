@@ -470,7 +470,7 @@ const content = {
     eduTitle: 'Education',
     edu: [
       {
-        degree: 'Master of Medical Engineering, Graduated with Distinction'
+        degree: 'Master of Medical Engineering, Graduated with Distinction (top academic honour, equivalent to First Class)',
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
         gpa: '7.00 / 9.00',
@@ -641,7 +641,7 @@ const content = {
     eduTitle: 'การศึกษา',
     edu: [
       {
-        degree: 'ปริญญาโทวิศวกรรมการแพทย์ สำเร็จการศึกษาด้วยเกียรตินิยมอันดับ 1 (Distinction)',
+        degree: 'ปริญญาโทวิศวกรรมการแพทย์ สำเร็จการศึกษาด้วยเกียรตินิยมอันดับ Distinction (เกียรตินิยมสูงสุด เทียบเท่าอันดับ 1)',
         school: 'มหาวิทยาลัยออคแลนด์ (University of Auckland) · นิวซีแลนด์',
         period: '2568 – 2569',
         gpa: '7.00 / 9.00',
