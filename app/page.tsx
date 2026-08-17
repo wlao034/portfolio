@@ -603,7 +603,7 @@ const content = {
     skillsEyebrow: 'Capabilities',
     skillsTitle: 'Skills',
     skills: [
-      { label: 'Software Tools & Professional Skills+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'Project Management', 'Cross-functional Leadership', 'Critical Thinking', 'Problem Solving', 'Troubleshooting','Time Management', 'Cross-Cultural Communication', 'Teamwork', '5S Workplace Organization'] },
+      { label: 'Software Tools & Professional Skills+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'Project Management', 'Cross-functional Leadership', 'Critical Thinking', 'Problem Solving', 'Troubleshooting', 'Time Management', 'Cross-Cultural Communication', 'Teamwork', '5S Workplace Organization', 'Adaptability', 'Stakeholder Management', 'Conflict Resolution', 'Active Listening', 'Collaborative Mindset', 'Attention to Detail', 'Analytical Thinking', 'Continuous Improvement Mindset', 'Technical Communication', 'Initiative', 'Resilience under Pressure'] },
     ],
     langEyebrow: 'Languages',
     languages: [
@@ -724,8 +724,7 @@ const content = {
     ],
     skillsEyebrow: 'ความสามารถ',
     skillsTitle: 'ทักษะ',
-    skills: [
-      { label: 'เครื่องมือซอฟต์แวร์ & ทักษะวิชาชีพ+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'การบริหารโครงการ', 'นำทีมข้ามสายงาน', 'คิดวิเคราะห์', 'แก้ปัญหา', 'การค้นหาและแก้ไขต้นตอของปัญหา', 'บริหารเวลา', 'สื่อสารข้ามวัฒนธรรม', 'ทำงานเป็นทีม', '5ส (5S)'] },
+    skills: [{ label: 'เครื่องมือซอฟต์แวร์ & ทักษะวิชาชีพ+', tags: ['SQL', 'Power BI', 'Excel', 'Word', 'PowerPoint', 'การบริหารโครงการ', 'นำทีมข้ามสายงาน', 'คิดวิเคราะห์', 'แก้ปัญหา', 'การค้นหาและแก้ไขต้นตอของปัญหา', 'บริหารเวลา', 'สื่อสารข้ามวัฒนธรรม', 'ทำงานเป็นทีม', '5ส (5S)', 'ความสามารถในการปรับตัว', 'การบริหารจัดการผู้มีส่วนได้ส่วนเสีย', 'การแก้ไขข้อขัดแย้ง', 'การรับฟังอย่างตั้งใจ', 'แนวคิดการทำงานร่วมกัน', 'ความละเอียดรอบคอบ', 'แนวคิดการพัฒนาอย่างต่อเนื่อง', 'การสื่อสารเชิงเทคนิค', 'ความคิดริเริ่ม', 'ความยืดหยุ่นภายใต้แรงกดดัน'] }
     ],
     langEyebrow: 'ภาษา',
     languages: [
