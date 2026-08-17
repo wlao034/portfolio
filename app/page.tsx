@@ -458,7 +458,7 @@ const content = {
     heroName: 'Waraitip Laosangprateep',
     heroBio1: "Master's in Medical Engineering at University of Auckland, with a foundation in Chemical Engineering from Thammasat University (SIIT). Research experience across New Zealand, Taiwan, and Thailand.",
     heroBio2: 'Bilingual communicator — native in Thai and proficient in English, with basic knowledge of Japanese and Korean. Passionate about cross-cultural collaboration.',
-    heroAvail: 'Available from August 2026 · Open to Thailand, South Korea, Singapore & beyond',
+    heroAvail: 'Available now · Open to Thailand, South Korea, Singapore & beyond',
     heroBtn1: 'View my work →',
     heroBtn2: 'Get in touch',
     stats: [
@@ -470,7 +470,7 @@ const content = {
     eduTitle: 'Education',
     edu: [
       {
-        degree: 'Master of Medical Engineering',
+        degree: 'Master of Medical Engineering, Graduated with Distinction'
         school: 'University of Auckland · New Zealand',
         period: '2025 – 2026',
         gpa: '7.00 / 9.00',
@@ -607,11 +607,11 @@ const content = {
     visitBtn: 'Visit Programme',
     contactEyebrow: "Let's connect",
     contactTitle: <>Let&apos;s <em>work</em> together</>,
-    contactSub: 'Open to opportunities in Thailand, South Korea, Singapore, and beyond · Available from August 2026',
+    contactSub: 'Open to opportunities in Thailand, South Korea, Singapore, and beyond · Available now',
     emailBtn: 'Email me →',
     downloadCV: 'Download CV ↓',
     cvFile: '/CV_Waraitip_full.pdf',
-    footerNote: 'Auckland, New Zealand · 2026',
+    footerNote: '',
   },
   th: {
     navItems: [
@@ -629,7 +629,7 @@ const content = {
     heroName: 'วลัยทิพย์ เหล่าแสงประทีป',
     heroBio1: 'กำลังศึกษาระดับปริญญาโท สาขาวิศวกรรมการแพทย์ มหาวิทยาลัยออคแลนด์ ประเทศนิวซีแลนด์ จบการศึกษาปริญญาตรีสาขาวิศวกรรมเคมี จากมหาวิทยาลัยธรรมศาสตร์ (SIIT)',
     heroBio2: 'พูดไทยและอังกฤษได้คล่อง มีความรู้ภาษาญี่ปุ่นและเกาหลีเบื้องต้น ชื่นชอบการสื่อสารและทำงานข้ามวัฒนธรรม',
-    heroAvail: 'พร้อมทำงานตั้งแต่ สิงหาคม 2569 · เปิดรับโอกาสในไทย เกาหลีใต้ สิงคโปร์ และทั่วโลก',
+    heroAvail: 'พร้อมเริ่มทำงาน · เปิดรับโอกาสในไทย เกาหลีใต้ สิงคโปร์ และทั่วโลก',
     heroBtn1: 'ดูผลงาน →',
     heroBtn2: 'ติดต่อฉัน',
     stats: [
@@ -641,7 +641,7 @@ const content = {
     eduTitle: 'การศึกษา',
     edu: [
       {
-        degree: 'ปริญญาโท วิศวกรรมการแพทย์',
+        degree: 'ปริญญาโทวิศวกรรมการแพทย์ สำเร็จการศึกษาด้วยเกียรตินิยมอันดับ 1 (Distinction)',
         school: 'มหาวิทยาลัยออคแลนด์ (University of Auckland) · นิวซีแลนด์',
         period: '2568 – 2569',
         gpa: '7.00 / 9.00',
@@ -729,11 +729,11 @@ const content = {
     visitBtn: 'เยี่ยมชมโครงการ',
     contactEyebrow: 'มาทำงานด้วยกัน',
     contactTitle: <>พร้อม<em>ร่วมงาน</em>กับคุณ</>,
-    contactSub: 'เปิดรับโอกาสในไทย เกาหลีใต้ สิงคโปร์ และทั่วโลก · พร้อมทำงานตั้งแต่สิงหาคม 2569',
+    contactSub: 'เปิดรับโอกาสในไทย เกาหลีใต้ สิงคโปร์ และทั่วโลก · พร้อมเริ่มทำงาน',
     emailBtn: 'ส่งอีเมล →',
     downloadCV: 'ดาวน์โหลด CV ↓',
     cvFile: '/CV_Waraitip_full.pdf',
-    footerNote: 'ออคแลนด์ นิวซีแลนด์ · 2569',
+    footerNote: '',
   },
 } as const
 
