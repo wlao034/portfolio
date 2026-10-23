@@ -472,9 +472,9 @@ const content = {
     logo: 'Ploy',
     heroTag: 'Medical Engineering · Chemical Engineering',
     heroLine1: 'Engineering at the',
-    heroLine2: <>intersection of <em>science</em></>,
+    heroLine2: <>intersection of <em>Technical Business Development</em></>,
     heroLine3: 'and ',
-    typedPhrases: ['Technical Business Development', 'Semiconductor & Advanced Technology'],
+    typedPhrases: ['Semiconductor & Advanced Technology'],
     heroName: 'Waraitip Laosangprateep',
     heroBio1: "Application Specialist for Thermo Fisher SEM at LMS Instruments (Thailand), with intensive Talos TEM training and an M.Eng. in Medical Engineering (University of Auckland, Distinction)",
     heroBio2: 'Bilingual communicator — native in Thai and proficient in English, with basic knowledge of Japanese and Korean. Passionate about cross-cultural collaboration.',
@@ -710,7 +710,7 @@ export default function Home() {
       if (bar) bar.style.width = `${pct * 100}%`
       document.getElementById('main-nav')?.classList.toggle('scrolled', window.scrollY > 40)
       document.getElementById('back-top')?.classList.toggle('show', window.scrollY > 400)
-      const ids = ['education', 'experience', 'skills', 'contact']
+      const ids = ['experience','education','skills', 'contact']
       for (const id of [...ids].reverse()) {
         const el = document.getElementById(id)
         if (el && window.scrollY >= el.offsetTop - 120) { setActiveSection(id); break }
@@ -827,6 +827,32 @@ export default function Home() {
           ))}
         </div>
         <div className="divider" />
+ {/* EXPERIENCE */}
+        <section className="section" id="experience">
+          <p className="section-eyebrow">{t.expEyebrow}</p>
+          <h2 className="section-title"><span>{t.expTitle}</span></h2>
+          {t.exp.map((e: any, i) => (
+            <div key={i} className="exp-card animate-on-scroll" style={{ transitionDelay: `${i * 0.1}s` }}>
+              <div><p className="exp-period">{e.period}</p><p className="exp-org">{e.org}</p></div>
+              <div>
+                <h3 className="exp-title">{e.title}</h3>
+                <ul className="exp-bullets">{e.bullets.map((b: string, j: number) => <li key={j} dangerouslySetInnerHTML={{ __html: b }} />)}</ul>
+                {e.expertise && (
+                  <div className="skill-tags" style={{ marginTop: 12 }}>
+                    {e.expertise.map((tag: string) => <span key={tag} className="skill-tag">{tag}</span>)}
+                  </div>
+                )}
+                {e.link && (
+                  <a href={e.link} target="_blank" rel="noreferrer" className="exp-link">
+                    <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 10L10 2M10 2H5M10 2V7" /></svg>
+                    {(e as any).linkLabel ?? t.visitBtn}
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </section>
+        <div className="divider" />
 
         {/* EDUCATION */}
         <section className="section" id="education">
@@ -882,33 +908,6 @@ export default function Home() {
                 )}
               </div>
               <span className="edu-period">{e.period}</span>
-            </div>
-          ))}
-        </section>
-        <div className="divider" />
-
-        {/* EXPERIENCE */}
-        <section className="section" id="experience">
-          <p className="section-eyebrow">{t.expEyebrow}</p>
-          <h2 className="section-title"><span>{t.expTitle}</span></h2>
-          {t.exp.map((e: any, i) => (
-            <div key={i} className="exp-card animate-on-scroll" style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div><p className="exp-period">{e.period}</p><p className="exp-org">{e.org}</p></div>
-              <div>
-                <h3 className="exp-title">{e.title}</h3>
-                <ul className="exp-bullets">{e.bullets.map((b: string, j: number) => <li key={j} dangerouslySetInnerHTML={{ __html: b }} />)}</ul>
-                {e.expertise && (
-                  <div className="skill-tags" style={{ marginTop: 12 }}>
-                    {e.expertise.map((tag: string) => <span key={tag} className="skill-tag">{tag}</span>)}
-                  </div>
-                )}
-                {e.link && (
-                  <a href={e.link} target="_blank" rel="noreferrer" className="exp-link">
-                    <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 10L10 2M10 2H5M10 2V7" /></svg>
-                    {(e as any).linkLabel ?? t.visitBtn}
-                  </a>
-                )}
-              </div>
             </div>
           ))}
         </section>
