@@ -167,10 +167,9 @@ nav.scrolled {
   pointer-events: none;
 }
 .hero-left {
-  flex: 1;
+  flex: 1.3;
   display: flex; flex-direction: column; justify-content: center;
   padding: 120px 64px 80px; position: relative; z-index: 1;
-  max-width: 860px; margin: 0 auto;
 }
 .hero-right {
   flex: 0.7;
