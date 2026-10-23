@@ -279,34 +279,6 @@ nav.scrolled {
 .section-title span { display: inline-block; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
 .divider { width: 100%; height: 1px; background: var(--border); }
 
-/* EDU */
-.edu-card {
-  padding: 36px 0; border-bottom: 1px solid var(--border);
-  display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start;
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
-}
-.edu-card.visible { opacity: 1; transform: none; }
-.edu-degree { font-size: 18px; font-weight: 500; margin-bottom: 3px; }
-.edu-school { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
-.edu-gpa { font-family: var(--mono); font-size: 12px; color: var(--accent); margin: -10px 0 16px; }
-.edu-period {
-  font-family: var(--mono); font-size: 11px; color: var(--muted);
-  white-space: nowrap; padding: 5px 12px;
-  border: 1px solid var(--border); border-radius: 100px; height: fit-content;
-}
-.edu-details { list-style: none; }
-.edu-details li { font-size: 13px; color: var(--muted); line-height: 1.8; padding: 3px 0 3px 14px; position: relative; }
-.edu-details li::before { content: '–'; position: absolute; left: 0; color: var(--dim); }
-
-/* EDU — richer sub-section groups (used when an entry's details are structured objects) */
-.edu-detail-group { margin-bottom: 22px; }
-.edu-detail-group:last-child { margin-bottom: 0; }
-.edu-group-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
-.edu-group-subtitle { font-size: 12px; color: var(--muted); margin-bottom: 10px; font-style: italic; }
-.edu-detail-group .skill-tags { margin-top: 10px; }
-.edu-detail-group .exp-link { margin-top: 12px; }
-
 /* EXP */
 .exp-card {
   padding: 36px 0; border-bottom: 1px solid var(--border);
@@ -336,6 +308,34 @@ nav.scrolled {
 }
 .exp-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 .exp-link svg { flex-shrink: 0; }
+
+/* EDU */
+.edu-card {
+  padding: 36px 0; border-bottom: 1px solid var(--border);
+  display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+}
+.edu-card.visible { opacity: 1; transform: none; }
+.edu-degree { font-size: 18px; font-weight: 500; margin-bottom: 3px; }
+.edu-school { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+.edu-gpa { font-family: var(--mono); font-size: 12px; color: var(--accent); margin: -10px 0 16px; }
+.edu-period {
+  font-family: var(--mono); font-size: 11px; color: var(--muted);
+  white-space: nowrap; padding: 5px 12px;
+  border: 1px solid var(--border); border-radius: 100px; height: fit-content;
+}
+.edu-details { list-style: none; }
+.edu-details li { font-size: 13px; color: var(--muted); line-height: 1.8; padding: 3px 0 3px 14px; position: relative; }
+.edu-details li::before { content: '–'; position: absolute; left: 0; color: var(--dim); }
+
+/* EDU — richer sub-section groups (used when an entry's details are structured objects) */
+.edu-detail-group { margin-bottom: 22px; }
+.edu-detail-group:last-child { margin-bottom: 0; }
+.edu-group-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.edu-group-subtitle { font-size: 12px; color: var(--muted); margin-bottom: 10px; font-style: italic; }
+.edu-detail-group .skill-tags { margin-top: 10px; }
+.edu-detail-group .exp-link { margin-top: 12px; }
 
 /* SKILLS */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
