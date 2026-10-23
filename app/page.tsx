@@ -486,6 +486,41 @@ const content = {
       { number: '3', label: 'Countries researched in' },
       { number: '2 + 2', label: 'Languages spoken' },
     ],
+    expEyebrow: 'Work & Research',
+    expTitle: 'Experience',
+    exp: [
+      {
+        period: 'Oct 2026 – Present', org: 'LMS instruments Thailand',
+        title: 'Application specialist Thermo Fisher EM product line',
+        bullets: [
+                    'Meet PCB-industry customers (KCE) and forensic customers (RPCA) to uncover their needs and technical challenges, and match them to the Thermo Fisher SEM that fits their application',
+                  	'Research and identify potential customers and organisations likely to be interested in the products, supporting business development for the SEM product line',
+	                  'Built a competitor landscape for Thailand covering gunshot residue (GSR) analysis and Amira/Avizo 3D reconstruction software: gathered and classified the data independently, then structured it into an Excel comparison ready for team use, using LLM tools to speed up setup',
+                    'Provide SEM application support and explain technical results and instrument value to specialist and non-specialist audiences',
+        ],
+        expertise: ['Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Origin Lab', 'Lab Skills'],
+      },
+      {
+        period: 'Jun – Jul 2023', org: 'Academia Sinica, Taiwan',
+        title: 'Research Intern — SWCNTs Defect Characterisation',
+        link: 'https://www.iams.sinica.edu.tw/iip/intern_experience',
+        bullets: [
+          'Conducted independent experiments on SWCNTs using absorbance and fluorescence spectroscopy for cancer diagnostic applications',
+          'Designed and executed DOE-style experiments; analysed spectral data using Origin Lab',
+          'Gained proficiency in nanomaterial characterisation, medical imaging principles, and precision instrumentation',
+        ],
+        expertise: ['Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Origin Lab', 'Lab Skills'],
+      },
+      {
+        period: '2024 – 2026', org: 'Auckland, New Zealand',
+        title: 'Customer Service & Operations', link: null,
+        bullets: [
+          "Retail and food service across Lily's Collection, Blue Elephant, Mi&Chi, Khao San Eatery, and The Coffee Club",
+          'Maintained consistent performance across multiple customer-facing roles while completing a full-time postgraduate degree — demonstrating punctuality, reliability, multitasking, effective time management, and practical problem-solving under pressure.',
+          'Operated POS systems, cash handling, and inter-departmental cooperation',
+        ],
+      },
+    ],
     eduEyebrow: 'Academic background',
     eduTitle: 'Education',
     edu: [
@@ -573,30 +608,6 @@ const content = {
         tagGroups: [
           { label: 'Engineering & Process', tags: ['Chemical Engineering', 'Process Engineering', 'P&ID', 'Process Flow Diagrams (PFD)', 'HAZOP / Process Safety', 'Mass & Energy Balances', 'Thermodynamics', 'Heat & Mass Transfer', 'Aspen Plus', 'HYSYS', 'Environmental Engineering', 'Wastewater Treatment', 'Food Science', 'Waste Management'] },
           { label: 'Senior Project / Computational Skills', tags: ['Computational Chemistry', 'Computational Modelling', 'Autodock', 'Gaussian / GaussView', 'Discovery Studio', 'Drug Discovery'] },
-        ],
-      },
-    ],
-    expEyebrow: 'Work & Research',
-    expTitle: 'Experience',
-    exp: [
-      {
-        period: 'Jun – Jul 2023', org: 'Academia Sinica, Taiwan',
-        title: 'Research Intern — SWCNTs Defect Characterisation',
-        link: 'https://www.iams.sinica.edu.tw/iip/intern_experience',
-        bullets: [
-          'Conducted independent experiments on SWCNTs using absorbance and fluorescence spectroscopy for cancer diagnostic applications',
-          'Designed and executed DOE-style experiments; analysed spectral data using Origin Lab',
-          'Gained proficiency in nanomaterial characterisation, medical imaging principles, and precision instrumentation',
-        ],
-        expertise: ['Fluorescence Spectroscopy', 'Absorbance Spectroscopy', 'Origin Lab', 'Lab Skills'],
-      },
-      {
-        period: '2024 – 2026', org: 'Auckland, New Zealand',
-        title: 'Customer Service & Operations', link: null,
-        bullets: [
-          "Retail and food service across Lily's Collection, Blue Elephant, Mi&Chi, Khao San Eatery, and The Coffee Club",
-          'Maintained consistent performance across multiple customer-facing roles while completing a full-time postgraduate degree — demonstrating punctuality, reliability, multitasking, effective time management, and practical problem-solving under pressure.',
-          'Operated POS systems, cash handling, and inter-departmental cooperation',
         ],
       },
     ],
