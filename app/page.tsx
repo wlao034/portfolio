@@ -191,7 +191,7 @@ nav.scrolled {
 }
 .hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--dim); }
 .hero-title {
-  font-size: clamp(32px, 4.2vw, 72px);
+  font-size: clamp(32px, 5.5vw, 72px);
   font-weight: 300; line-height: 1.15; letter-spacing: -0.01em;
   margin-bottom: 32px; color: var(--text);
   opacity: 0; animation: fadeUp 0.7s 0.2s forwards;
