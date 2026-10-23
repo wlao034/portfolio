@@ -651,6 +651,7 @@ const content = {
 // A single education entry's `details` array can be EITHER:
 //  - an array of plain strings (simple bullet list), or
 //  - an array of "detail groups" (title/subtitle/bullets/expertise/link) for a richer sub-sectioned layout.
+type Lang = 'en'
 function isDetailGroup(d: unknown): d is {
   title?: string
   subtitle?: string
@@ -779,10 +780,6 @@ export default function Home() {
         {t.navItems.map(n => (
           <a key={n.id} href={`#${n.id}`} onClick={() => setMenuOpen(false)}>{n.label}</a>
         ))}
-        <div className="mobile-lang">
-          <button className={lang === 'en' ? 'active' : ''} onClick={() => { switchLang('en'); setMenuOpen(false) }}>EN</button>
-          <button className={lang === 'th' ? 'active' : ''} onClick={() => { switchLang('th'); setMenuOpen(false) }}>TH</button>
-        </div>
       </div>
 
       <nav id="main-nav">
@@ -792,10 +789,6 @@ export default function Home() {
             <li key={n.id}><a href={`#${n.id}`} className={activeSection === n.id ? 'active' : ''}>{n.label}</a></li>
           ))}
         </ul>
-        <div className="lang-toggle">
-          <button className={lang === 'en' ? 'active' : ''} onClick={() => switchLang('en')}>EN</button>
-          <button className={lang === 'th' ? 'active' : ''} onClick={() => switchLang('th')}>TH</button>
-        </div>
         <button className={`hamburger${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(v => !v)} aria-label="Menu">
           <span /><span /><span />
         </button>
@@ -954,16 +947,21 @@ export default function Home() {
           <p className="section-eyebrow">{t.certEyebrow}</p>
           <h2 className="section-title"><span>{t.certTitle}</span></h2>
           <div className="cert-grid">
-            {t.certs.map((c, i) => (
-              <div key={i} className="cert-card animate-on-scroll" style={{ transitionDelay: `${i * 0.1}s` }}>
-                <img className="cert-card-img" src={c.img} alt={c.label} onClick={() => setLightboxSrc(c.img)} />
-                <div className="cert-card-label">{c.label}</div>
-                <button className="exp-link" style={{ marginTop: 14 }} onClick={() => setLightboxSrc(c.img)}>
-                  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 1h5v5M11 1L5 7M2 4H1v7h7v-1" /></svg>
-                  {t.certBtn}
-                </button>
-              </div>
-            ))}
+            {t.certs.map((c, i) => {
+ 			 const img = 'img' in c ? c.img : undefined
+  			 return (
+    	   <div key={i} className="cert-card animate-on-scroll" style={{ transitionDelay: `${i * 0.1}s` }}>
+    		  {img && <img className="cert-card-img" src={img} alt={c.label} onClick={() => setLightboxSrc(img)} />}
+   		   <div className="cert-card-label">{c.label}</div>
+    		  {img && (
+       			 <button className="exp-link" style={{ marginTop: 14 }} onClick={() => setLightboxSrc(img)}>
+         				 <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 1h5v5M11 1L5 7M2 4H1v7h7v-1" /></svg>
+        			  {t.certBtn}
+       			 </button>
+    				  )}
+   				 </div>
+			  )
+			})}
           </div>
         </section>
         <div className="divider" />
