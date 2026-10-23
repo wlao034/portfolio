@@ -641,7 +641,7 @@ const content = {
     contactSub: 'Open to opportunities in Thailand, South Korea, Singapore, and beyond · Available within 1 month',
     emailBtn: 'Email me →',
     downloadCV: 'Download CV ↓',
-    cvFile: '/CV_Waraitip_full.pdf',
+    cvFile: '/CV_Waraitip_Singapore.pdf',
     footerNote: '',
   },
   
