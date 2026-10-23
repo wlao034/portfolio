@@ -801,7 +801,7 @@ export default function Home() {
             <h1 className="hero-title">
               {t.heroLine1}<br />
               {t.heroLine2}<br />
-              {t.heroLine3}<span id="typed-text" /><span className="typed-cursor" />
+              <span id="typed-text" /><span className="typed-cursor" />
             </h1>
             <p className="hero-name">{t.heroName}</p>
             <p className="hero-bio">{t.heroBio1}</p>
