@@ -474,11 +474,11 @@ const content = {
     heroLine1: 'Engineering at the',
     heroLine2: <>intersection of <em>science</em></>,
     heroLine3: 'and ',
-    typedPhrases: ['data & information.', 'health & impact.'],
+    typedPhrases: ['Technical Business Development', 'Semiconductor & Advanced Technology'],
     heroName: 'Waraitip Laosangprateep',
     heroBio1: "Application Specialist for Thermo Fisher SEM at LMS Instruments (Thailand), with intensive Talos TEM training and an M.Eng. in Medical Engineering (University of Auckland, Distinction)",
     heroBio2: 'Bilingual communicator — native in Thai and proficient in English, with basic knowledge of Japanese and Korean. Passionate about cross-cultural collaboration.',
-    heroAvail: 'Available now · Open to Thailand, South Korea, Singapore & beyond',
+    heroAvail: 'Available within 1 month · Open to Thailand, South Korea, Singapore & beyond',
     heroBtn1: 'View my work →',
     heroBtn2: 'Get in touch',
     stats: [
@@ -602,7 +602,7 @@ const content = {
         gpa: '3.22 / 4.00',
         details: [
           'International Programme, full English instruction',
-          'Senior Project: Theoretical study on butylone inclusion complexes with β-cyclodextrin — presented at PACCON 2024',
+          'Senior Project: Computational study of inclusion complex formation using molecular docking (AutoDock) and quantum chemical modelling (Gaussian/GaussView) — presented at PACCON 2024',
          'Coursework: Chemical Reaction Engineering · Process Design · Plant Design · Thermodynamics · Heat & Mass Transfer · Fluid Mechanics · Environmental Engineering · Wastewater Treatment · Food Science · Safety in Chemical Operations · Analytical and Instrumental (XRD, FTIR, UV-Vis, Raman, XRF, NMR, AAS, ICP-OES, SEM, TEM, TGA, BET, GC, GC-MS, HPLC, LC-MS) · Computational Chemistry · Molecular Docking',
         ],
         tagGroups: [
@@ -626,6 +626,7 @@ const content = {
     certEyebrow: 'Credentials',
     certTitle: 'Certifications',
     certs: [
+	  { label: 'Talos TEM and Avizo 3D training (STREC, Chulalongkorn University, LMS Thailand, Thermo Fisher)' },
       { label: 'SQL Foundations', img: '/sql1.png' },
       { label: 'Data Manipulation and Transactions in SQL Server', img: '/sql2.png' },
       { label: 'Introduction to Semiconductor Process 1', img: '/kaist1.png' },
@@ -638,7 +639,7 @@ const content = {
     visitBtn: 'Visit Programme',
     contactEyebrow: "Let's connect",
     contactTitle: <>Let&apos;s <em>work</em> together</>,
-    contactSub: 'Open to opportunities in Thailand, South Korea, Singapore, and beyond · Available now',
+    contactSub: 'Open to opportunities in Thailand, South Korea, Singapore, and beyond · Available within 1 month',
     emailBtn: 'Email me →',
     downloadCV: 'Download CV ↓',
     cvFile: '/CV_Waraitip_full.pdf',
@@ -646,8 +647,6 @@ const content = {
   },
   
 } as const
-
-type Lang = 'en' | 'th'
 
 // A single education entry's `details` array can be EITHER:
 //  - an array of plain strings (simple bullet list), or
