@@ -191,7 +191,7 @@ nav.scrolled {
 }
 .hero-tag::before { content: ''; width: 28px; height: 1px; background: var(--dim); }
 .hero-title {
-  font-size: clamp(32px, 5.5vw, 72px);
+  font-size: clamp(32px, 4.2vw, 72px);
   font-weight: 300; line-height: 1.15; letter-spacing: -0.01em;
   margin-bottom: 32px; color: var(--text);
   opacity: 0; animation: fadeUp 0.7s 0.2s forwards;
@@ -471,10 +471,10 @@ const content = {
     ],
     logo: 'Ploy',
     heroTag: 'Medical Engineering · Chemical Engineering',
-    heroLine1: 'Technical business development',
-	heroLine2: <>at the intersection of <em>science</em></>,
-	heroLine3: 'and ',
-	typedPhrases: ['semiconductor & advanced technology.'],
+  	heroLine1: 'Where',
+	heroLine2: <><em>science</em> meets</>,
+	heroLine3: '',
+	typedPhrases: ['semiconductor business.', 'advanced technology frontier.'],
     heroName: 'Waraitip Laosangprateep',
     heroBio1: "Application Specialist for Thermo Fisher SEM at LMS Instruments (Thailand), with intensive Talos TEM training and an M.Eng. in Medical Engineering (University of Auckland, Distinction)",
     heroBio2: 'Bilingual communicator — native in Thai and proficient in English, with basic knowledge of Japanese and Korean. Passionate about cross-cultural collaboration.',
