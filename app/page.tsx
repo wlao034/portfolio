@@ -813,9 +813,7 @@ export default function Home() {
               <a href="#contact" className="btn-outline">{t.heroBtn2}</a>
             </div>
           </div>
-          <div className="hero-right">
-            <img src="/profile.jpg" alt={t.heroName} className="hero-photo" />
-          </div>
+
         </section>
 
         {/* STATS */}
